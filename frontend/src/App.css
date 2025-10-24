@@ -1,0 +1,101 @@
+/* Global styles for the Football Recruiting Dashboard */
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* D3 Overlay styles */
+.d3-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.d3-overlay svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Canvas Overlay styles */
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+/* Connection lines */
+.connection-line {
+  pointer-events: none;
+}
+
+/* Markers */
+.hs-marker {
+  pointer-events: none;
+}
+
+.college-marker {
+  pointer-events: none;
+}
+
+.data-circle {
+  pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .MuiPaper-root {
+    padding: 1rem !important;
+  }
+  
+  .MuiBox-root {
+    gap: 0.5rem !important;
+  }
+  
+  .MuiFormControl-root {
+    min-width: 150px !important;
+  }
+}
+
+/* Loading states */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Map container */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
