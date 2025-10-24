@@ -72,7 +72,7 @@ const ConnectionsMap = () => {
     // Filter for selected college data with year range
     const collegeData = allData.filter(row => 
       row.committedTo && 
-      (showAllColleges || row.committedTo.toLowerCase().includes(selectedCollege.toLowerCase())) &&
+      (showAllColleges || row.committedTo === selectedCollege) &&
       parseInt(row.class_year) >= yearRange[0] &&
       parseInt(row.class_year) <= yearRange[1] &&
       row.latitude && 
@@ -417,7 +417,7 @@ const ConnectionsMap = () => {
         <Typography variant="h6" sx={{ mb: 2, color: '#2e7d32', textAlign: 'center' }}>
           Top 10 Schools by Recruits {showAllColleges ? 'Overall' : `to ${selectedCollege}`}
         </Typography>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center' }}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, maxWidth: '600px', mx: 'auto' }}>
           {topSchools.length > 0 ? (
             topSchools.map((school, index) => (
               <Box 
@@ -426,13 +426,12 @@ const ConnectionsMap = () => {
                   display: 'flex', 
                   justifyContent: 'space-between',
                   alignItems: 'center',
-                  py: 1,
+                  py: 1.5,
                   px: 2,
-                  minWidth: '250px',
                   backgroundColor: index < 3 ? '#e8f5e8' : 'white',
                   borderRadius: 1,
                   border: index < 3 ? '2px solid #4caf50' : '1px solid #e0e0e0',
-                  flex: '1 1 250px'
+                  width: '100%'
                 }}
               >
                 <Box>
