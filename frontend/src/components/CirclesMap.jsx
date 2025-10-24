@@ -11,18 +11,18 @@ import {
   Select,
   MenuItem,
   Slider,
-  Grid,
   FormControlLabel,
   Checkbox
 } from '@mui/material';
 import Papa from 'papaparse';
 
-const ConnectionsMap = () => {
+const CirclesMap = () => {
   const [allData, setAllData] = useState(null);
   const [geocodeData, setGeocodeData] = useState(null);
   const [selectedCollege, setSelectedCollege] = useState('Alabama');
   const [yearRange, setYearRange] = useState([2020, 2025]);
   const [showAllColleges, setShowAllColleges] = useState(false);
+  const [mapType, setMapType] = useState('cities'); // 'cities' or 'colleges'
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -67,7 +67,7 @@ const ConnectionsMap = () => {
 
   // Process data based on selected college
   const processedData = useMemo(() => {
-    if (!allData || !geocodeData) return { pathways: [] };
+    if (!allData || !geocodeData) return { cities: [], colleges: [] };
     
     // Filter for selected college data with year range
     const collegeData = allData.filter(row => 
@@ -80,46 +80,45 @@ const ConnectionsMap = () => {
       row.country === 'USA'
     );
     
-    // Process pathways
-    const pathwayCounts = new Map();
-    
+    // Process cities data
+    const cityCounts = new Map();
     collegeData.forEach(row => {
-      const key = `${row.school}|${row.committedTo}`;
-      if (pathwayCounts.has(key)) {
-        pathwayCounts.get(key).count += 1;
+      const cityKey = `${row.city}|${row.stateProvince}`;
+      if (cityCounts.has(cityKey)) {
+        cityCounts.get(cityKey).count += 1;
       } else {
-        pathwayCounts.set(key, {
-          school: row.school,
-          committedTo: row.committedTo,
+        cityCounts.set(cityKey, {
           city: row.city,
-          stateProvince: row.stateProvince,
-          count: 1,
-          latitude: parseFloat(row.latitude),
-          longitude: parseFloat(row.longitude)
+          state: row.stateProvince,
+          lat: parseFloat(row.latitude),
+          lon: parseFloat(row.longitude),
+          count: 1
         });
       }
     });
     
-    // Transform to visualization format
-    const pathways = Array.from(pathwayCounts.values()).map(pathway => {
-      const collegeCoord = geocodeData[pathway.committedTo];
-      
-      return {
-        hs_name: pathway.school,
-        hs_lat: pathway.latitude,
-        hs_lon: pathway.longitude,
-        hs_city: pathway.city,
-        hs_state: pathway.stateProvince,
-        college_name: pathway.committedTo,
-        college_lat: collegeCoord ? collegeCoord.latitude : 39.8283,
-        college_lon: collegeCoord ? collegeCoord.longitude : -98.5795,
-        recruit_count: pathway.count,
-        city_total_recruits: pathway.count,
-        college_total_recruits: pathway.count
-      };
+    // Process colleges data
+    const collegeCounts = new Map();
+    collegeData.forEach(row => {
+      if (collegeCounts.has(row.committedTo)) {
+        collegeCounts.get(row.committedTo).count += 1;
+      } else {
+        const collegeCoord = geocodeData[row.committedTo];
+        if (collegeCoord) {
+          collegeCounts.set(row.committedTo, {
+            college: row.committedTo,
+            lat: collegeCoord.latitude,
+            lon: collegeCoord.longitude,
+            count: 1
+          });
+        }
+      }
     });
     
-    return { pathways };
+    return {
+      cities: Array.from(cityCounts.values()),
+      colleges: Array.from(collegeCounts.values())
+    };
   }, [allData, geocodeData, selectedCollege, yearRange, showAllColleges]);
 
   // Get available colleges for dropdown
@@ -152,103 +151,65 @@ const ConnectionsMap = () => {
     };
   }, [allData]);
 
-  // Calculate top 10 schools analysis
-  const topSchools = useMemo(() => {
-    if (!processedData.pathways.length) return [];
-    
-    const schoolCounts = new Map();
-    processedData.pathways.forEach(pathway => {
-      const key = `${pathway.hs_name}, ${pathway.hs_state}`;
-      schoolCounts.set(key, (schoolCounts.get(key) || 0) + pathway.recruit_count);
-    });
-    
-    return Array.from(schoolCounts.entries())
-      .map(([school, count]) => ({ school, count }))
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 10);
-  }, [processedData.pathways]);
-
   const plotData = useMemo(() => {
     const traces = [];
     
-    // Always add a dummy trace to ensure the map shows up
-    if (!processedData.pathways.length) {
-      traces.push({
-        type: 'scattergeo',
-        mode: 'markers',
-        lat: [39.8283], // Center of US
-        lon: [-98.5795],
-        marker: {
-          size: 1,
-          color: 'transparent',
-          opacity: 0
-        },
-        showlegend: false,
-        hoverinfo: 'skip'
-      });
-      return traces;
+    if (mapType === 'cities') {
+      const cities = processedData.cities;
+      if (cities.length > 0) {
+        const maxCount = Math.max(...cities.map(c => c.count));
+        
+        traces.push({
+          type: 'scattergeo',
+          mode: 'markers',
+          lat: cities.map(c => c.lat),
+          lon: cities.map(c => c.lon),
+          marker: {
+            size: cities.map(c => Math.max(5, Math.min(50, 5 + (c.count / maxCount) * 45))),
+            color: 'blue',
+            opacity: 0.6,
+            symbol: 'circle',
+            line: {
+              width: 1,
+              color: 'darkblue'
+            }
+          },
+          name: 'Cities by Recruit Count',
+          hovertemplate: '<b>%{text}</b><br>Total Recruits: %{customdata}<br>%{lat:.3f}, %{lon:.3f}<extra></extra>',
+          text: cities.map(c => `${c.city}, ${c.state}`),
+          customdata: cities.map(c => c.count)
+        });
+      }
+    } else {
+      const colleges = processedData.colleges;
+      if (colleges.length > 0) {
+        const maxCount = Math.max(...colleges.map(c => c.count));
+        
+        traces.push({
+          type: 'scattergeo',
+          mode: 'markers',
+          lat: colleges.map(c => c.lat),
+          lon: colleges.map(c => c.lon),
+          marker: {
+            size: colleges.map(c => Math.max(8, Math.min(60, 8 + (c.count / maxCount) * 52))),
+            color: 'green',
+            opacity: 0.7,
+            symbol: 'diamond',
+            line: {
+              width: 1,
+              color: 'darkgreen'
+            }
+          },
+          name: 'Colleges by Recruit Count',
+          hovertemplate: '<b>%{text}</b><br>Total Recruits: %{customdata}<br>%{lat:.3f}, %{lon:.3f}<extra></extra>',
+          text: colleges.map(c => c.college),
+          customdata: colleges.map(c => c.count)
+        });
+      }
     }
-
-
-    // Add high school markers (blue) - match notebook exactly
-    const hs_trace = {
-      type: 'scattergeo',
-      mode: 'markers',
-      lat: processedData.pathways.map(p => p.hs_lat),
-      lon: processedData.pathways.map(p => p.hs_lon),
-      marker: {
-        size: 8,
-        color: 'blue',
-        opacity: 0.7,
-        symbol: 'circle'
-      },
-      name: 'High Schools',
-      hovertemplate: '<b>%{text}</b><br>High School<br>City Total Recruits: %{customdata}<extra></extra>',
-      text: processedData.pathways.map(p => `${p.hs_name}<br>${p.hs_city}, ${p.hs_state}`),
-      customdata: processedData.pathways.map(p => p.city_total_recruits)
-    };
-    traces.push(hs_trace);
-
-    // Add college markers (green) - match notebook exactly
-    const college_trace = {
-      type: 'scattergeo',
-      mode: 'markers',
-      lat: processedData.pathways.map(p => p.college_lat),
-      lon: processedData.pathways.map(p => p.college_lon),
-      marker: {
-        size: 10,
-        color: 'green',
-        opacity: 0.8,
-        symbol: 'diamond'
-      },
-      name: 'Colleges',
-      hovertemplate: '<b>%{text}</b><br>College<br>Total Recruits Received: %{customdata}<extra></extra>',
-      text: processedData.pathways.map(p => p.college_name),
-      customdata: processedData.pathways.map(p => p.college_total_recruits)
-    };
-    traces.push(college_trace);
-
-    // Add connecting lines (red, thickness based on recruit count) - match notebook exactly
-    processedData.pathways.forEach(pathway => {
-      const line_width = Math.max(1, Math.min(8, pathway.recruit_count));
-      const line_opacity = Math.max(0.3, Math.min(0.9, 0.3 + (pathway.recruit_count / Math.max(...processedData.pathways.map(p => p.recruit_count))) * 0.6));
-      
-      traces.push({
-        type: 'scattergeo',
-        mode: 'lines',
-        lat: [pathway.hs_lat, pathway.college_lat],
-        lon: [pathway.hs_lon, pathway.college_lon],
-        line: {
-          color: `rgba(255, 0, 0, ${line_opacity})`,
-          width: line_width
-        },
-        showlegend: false,
-        hoverinfo: 'skip'
-      });
-    });
-
+    
     return traces;
-  }, [processedData]);
+  }, [processedData, mapType]);
 
   const layout = {
     geo: {
@@ -266,15 +227,13 @@ const ConnectionsMap = () => {
       lonaxis_range: [-125, -66],
       lataxis_range: [24, 50]
     },
-    width: 1200,
-    height: 800,
+    margin: { l: 50, r: 50, t: 50, b: 50 },
     showlegend: true,
     legend: {
       x: 0.02,
       y: 0.98,
       bgcolor: 'rgba(255,255,255,0.8)'
-    },
-    margin: { l: 50, r: 50, t: 50, b: 50 }
+    }
   };
 
   if (loading) {
@@ -306,19 +265,14 @@ const ConnectionsMap = () => {
         color: 'white'
       }}>
         <Typography variant="h6" sx={{ mr: 2, color: 'white' }}>
-          {showAllColleges ? 'All Colleges' : selectedCollege} Football Recruiting Connections
+          {showAllColleges ? 'All Colleges' : selectedCollege} Recruiting Circles
         </Typography>
         <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.8)' }}>
-          Showing {processedData.pathways.length} pathways
+          Showing {mapType === 'cities' ? processedData.cities.length : processedData.colleges.length} locations
         </Typography>
-        {processedData.pathways.length === 0 && !loading && (
-          <Typography variant="body2" sx={{ color: '#ffcdd2' }}>
-            No pathways found. Check console for debugging info.
-          </Typography>
-        )}
       </Paper>
 
-      {/* College Selection and Year Range */}
+      {/* Controls */}
       <Box sx={{ 
         display: 'flex', 
         justifyContent: 'center', 
@@ -367,6 +321,19 @@ const ConnectionsMap = () => {
           />
         </Box>
         
+        <FormControl sx={{ minWidth: 150 }}>
+          <InputLabel id="map-type-label">Map Type</InputLabel>
+          <Select
+            labelId="map-type-label"
+            value={mapType}
+            label="Map Type"
+            onChange={(e) => setMapType(e.target.value)}
+          >
+            <MenuItem value="cities">Cities</MenuItem>
+            <MenuItem value="colleges">Colleges</MenuItem>
+          </Select>
+        </FormControl>
+        
         <FormControlLabel
           control={
             <Checkbox
@@ -405,61 +372,8 @@ const ConnectionsMap = () => {
           />
         </Box>
       </Box>
-
-      {/* Top Schools Panel - Underneath */}
-      <Box sx={{ 
-        backgroundColor: '#f5f5f5',
-        borderRadius: 2,
-        p: 2,
-        m: 2,
-        mt: 0
-      }}>
-        <Typography variant="h6" sx={{ mb: 2, color: '#2e7d32', textAlign: 'center' }}>
-          Top 10 Schools by Recruits {showAllColleges ? 'Overall' : `to ${selectedCollege}`}
-        </Typography>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, justifyContent: 'center' }}>
-          {topSchools.length > 0 ? (
-            topSchools.map((school, index) => (
-              <Box 
-                key={school.school}
-                sx={{ 
-                  display: 'flex', 
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  py: 1,
-                  px: 2,
-                  minWidth: '250px',
-                  backgroundColor: index < 3 ? '#e8f5e8' : 'white',
-                  borderRadius: 1,
-                  border: index < 3 ? '2px solid #4caf50' : '1px solid #e0e0e0',
-                  flex: '1 1 250px'
-                }}
-              >
-                <Box>
-                  <Typography variant="body2" sx={{ fontWeight: index < 3 ? 'bold' : 'normal' }}>
-                    {index + 1}. {school.school}
-                  </Typography>
-                </Box>
-                <Typography 
-                  variant="body2" 
-                  sx={{ 
-                    fontWeight: 'bold',
-                    color: index < 3 ? '#2e7d32' : '#666'
-                  }}
-                >
-                  {school.count} recruit{school.count !== 1 ? 's' : ''}
-                </Typography>
-              </Box>
-            ))
-          ) : (
-            <Typography variant="body2" color="text.secondary">
-              No data available
-            </Typography>
-          )}
-        </Box>
-      </Box>
     </Box>
   );
 };
 
-export default ConnectionsMap;
+export default CirclesMap;
