@@ -70,9 +70,11 @@ const CirclesMap = () => {
     if (!allData || !geocodeData) return { cities: [], colleges: [] };
     
     // Filter for selected college data with year range
+    // Force showAllColleges when map type is 'colleges'
+    const shouldShowAllColleges = showAllColleges || mapType === 'colleges';
     const collegeData = allData.filter(row => 
       row.committedTo && 
-      (showAllColleges || row.committedTo.toLowerCase().includes(selectedCollege.toLowerCase())) &&
+      (shouldShowAllColleges || row.committedTo === selectedCollege) &&
       parseInt(row.class_year) >= yearRange[0] &&
       parseInt(row.class_year) <= yearRange[1] &&
       row.latitude && 
@@ -119,7 +121,34 @@ const CirclesMap = () => {
       cities: Array.from(cityCounts.values()),
       colleges: Array.from(collegeCounts.values())
     };
-  }, [allData, geocodeData, selectedCollege, yearRange, showAllColleges]);
+  }, [allData, geocodeData, selectedCollege, yearRange, showAllColleges, mapType]);
+
+  // Calculate top 10 cities analysis
+  const topCities = useMemo(() => {
+    if (!processedData.cities.length) return [];
+    
+    return processedData.cities
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10)
+      .map((city, index) => ({ 
+        ...city, 
+        rank: index + 1,
+        displayName: `${city.city}, ${city.state}`
+      }));
+  }, [processedData.cities]);
+
+  // Calculate top 10 colleges analysis
+  const topColleges = useMemo(() => {
+    if (!processedData.colleges.length) return [];
+    
+    return processedData.colleges
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10)
+      .map((college, index) => ({ 
+        ...college, 
+        rank: index + 1
+      }));
+  }, [processedData.colleges]);
 
   // Get available colleges for dropdown
   const availableColleges = useMemo(() => {
@@ -227,6 +256,8 @@ const CirclesMap = () => {
       lonaxis_range: [-125, -66],
       lataxis_range: [24, 50]
     },
+    width: 1200,
+    height: 800,
     margin: { l: 50, r: 50, t: 50, b: 50 },
     showlegend: true,
     legend: {
@@ -265,7 +296,7 @@ const CirclesMap = () => {
         color: 'white'
       }}>
         <Typography variant="h6" sx={{ mr: 2, color: 'white' }}>
-          {showAllColleges ? 'All Colleges' : selectedCollege} Recruiting Circles
+          {(showAllColleges || mapType === 'colleges') ? 'All Colleges' : selectedCollege} Recruiting Circles
         </Typography>
         <Typography variant="body2" sx={{ color: 'rgba(255,255,255,0.8)' }}>
           Showing {mapType === 'cities' ? processedData.cities.length : processedData.colleges.length} locations
@@ -287,7 +318,7 @@ const CirclesMap = () => {
             value={selectedCollege}
             label="Select College"
             onChange={(e) => setSelectedCollege(e.target.value)}
-            disabled={showAllColleges}
+            disabled={showAllColleges || mapType === 'colleges'}
           >
             {availableColleges.map((college) => (
               <MenuItem key={college} value={college}>
@@ -299,16 +330,12 @@ const CirclesMap = () => {
         
         <Box sx={{ minWidth: 300 }}>
           <Typography variant="body2" sx={{ mb: 1, textAlign: 'center' }}>
-            {showAllColleges ? `Year: ${yearRange[0]}` : `Year Range: ${yearRange[0]} - ${yearRange[1]}`}
+            Year Range: {yearRange[0]} - {yearRange[1]}
           </Typography>
           <Slider
-            value={showAllColleges ? yearRange[0] : yearRange}
+            value={yearRange}
             onChange={(e, newValue) => {
-              if (showAllColleges) {
-                setYearRange([newValue, newValue]);
-              } else {
-                setYearRange(newValue);
-              }
+              setYearRange(newValue);
             }}
             valueLabelDisplay="auto"
             min={dataYearRange.min}
@@ -337,9 +364,10 @@ const CirclesMap = () => {
         <FormControlLabel
           control={
             <Checkbox
-              checked={showAllColleges}
+              checked={showAllColleges || mapType === 'colleges'}
               onChange={(e) => setShowAllColleges(e.target.checked)}
               color="primary"
+              disabled={mapType === 'colleges'}
             />
           }
           label="Show All Colleges"
@@ -370,6 +398,65 @@ const CirclesMap = () => {
             style={{ width: '100%', height: '100%', margin: 0, padding: 0 }}
             config={{ responsive: true }}
           />
+        </Box>
+      </Box>
+
+      {/* Compact Top Rankings Panel */}
+      <Box sx={{ 
+        backgroundColor: '#f5f5f5',
+        borderRadius: 2,
+        p: 2,
+        m: 2,
+        mt: 0
+      }}>
+        <Typography variant="h6" sx={{ mb: 2, color: '#2e7d32', textAlign: 'center' }}>
+          Top 10 {mapType === 'cities' ? 'Cities' : 'Colleges'} by Recruit Count
+        </Typography>
+        <Box sx={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+          gap: 1,
+          maxWidth: '1000px',
+          mx: 'auto'
+        }}>
+          {(mapType === 'cities' ? topCities : topColleges).length > 0 ? (
+            (mapType === 'cities' ? topCities : topColleges).map((item, index) => (
+              <Box 
+                key={mapType === 'cities' ? `${item.city}-${item.state}` : item.college}
+                sx={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  py: 1,
+                  px: 1.5,
+                  backgroundColor: index < 3 ? '#e8f5e8' : 'white',
+                  borderRadius: 1,
+                  border: index < 3 ? '2px solid #4caf50' : '1px solid #e0e0e0'
+                }}
+              >
+                <Typography variant="body2" sx={{ 
+                  fontWeight: index < 3 ? 'bold' : 'normal',
+                  fontSize: '0.875rem'
+                }}>
+                  {item.rank}. {mapType === 'cities' ? item.displayName : item.college}
+                </Typography>
+                <Typography 
+                  variant="body2" 
+                  sx={{ 
+                    fontWeight: 'bold',
+                    color: index < 3 ? '#2e7d32' : '#666',
+                    fontSize: '0.875rem'
+                  }}
+                >
+                  {item.count}
+                </Typography>
+              </Box>
+            ))
+          ) : (
+            <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center', gridColumn: '1 / -1' }}>
+              No data available
+            </Typography>
+          )}
         </Box>
       </Box>
     </Box>
