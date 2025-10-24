@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Navigation from './components/Navigation';
 import ConnectionsMap from './components/ConnectionsMap';
-import SizeGraphsMap from './components/SizeGraphsMap';
+import CirclesMap from './components/CirclesMap';
+import Navigation from './components/Navigation';
 
 const theme = createTheme({
   palette: {
@@ -26,7 +26,7 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<ConnectionsMap />} />
-            <Route path="/size-graphs" element={<SizeGraphsMap />} />
+            <Route path="/circles" element={<CirclesMap />} />
           </Routes>
         </div>
       </Router>

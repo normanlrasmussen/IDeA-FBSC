@@ -3,6 +3,38 @@ import Papa from 'papaparse';
 // Cache for loaded data
 let cachedData = null;
 let dataPromise = null;
+let collegeCoords = null;
+
+/**
+ * Load geocode cache for college coordinates
+ * @returns {Promise<Object>} College coordinates
+ */
+export const loadCollegeCoords = async () => {
+  if (collegeCoords) {
+    return collegeCoords;
+  }
+
+  try {
+    const response = await fetch('/data/geocode_cache.json');
+    const geocodeCache = await response.json();
+    
+    // Convert cache format to coordinate format
+    collegeCoords = {};
+    for (const [college, data] of Object.entries(geocodeCache)) {
+      if (data && data.latitude && data.longitude) {
+        collegeCoords[college] = {
+          lat: data.latitude,
+          lon: data.longitude
+        };
+      }
+    }
+    
+    return collegeCoords;
+  } catch (error) {
+    console.error('Error loading college coordinates:', error);
+    return {};
+  }
+};
 
 /**
  * Load and parse the recruiting data CSV
@@ -23,33 +55,21 @@ export const loadRecruitingData = async () => {
       download: true,
       skipEmptyLines: true,
       transformHeader: (header) => {
-        // Convert headers to camelCase and handle specific cases
-        const cleanHeader = header
+        // Handle specific column name mappings first
+        if (header === 'class_year') {
+          return 'classYear';
+        }
+        if (header === 'stateProvince') return 'stateProvince';
+        if (header === 'committedTo') return 'committedTo';
+        
+        // Convert other headers to camelCase
+        const transformed = header
           .toLowerCase()
           .replace(/([a-z])([A-Z])/g, '$1$2')
           .replace(/\s+/g, '');
-        
-        // Handle specific column name mappings
-        if (cleanHeader === 'class_year') return 'classYear';
-        if (cleanHeader === 'stateprovince') return 'stateProvince';
-        if (cleanHeader === 'committedto') return 'committedTo';
-        
-        return cleanHeader;
+        return transformed;
       },
       complete: (results) => {
-        console.log('CSV parsing complete:', results.data.length, 'rows');
-        console.log('Sample row:', results.data[0]);
-        console.log('Column headers:', Object.keys(results.data[0] || {}));
-        
-        // Check what's in the first few rows
-        console.log('First 3 rows:', results.data.slice(0, 3));
-        
-        // Check specific columns we need
-        if (results.data[0]) {
-          console.log('committedTo value:', results.data[0].committedTo);
-          console.log('classYear value:', results.data[0].classYear);
-          console.log('school value:', results.data[0].school);
-        }
         
         if (results.errors.length > 0) {
           console.warn('CSV parsing warnings:', results.errors);
@@ -72,8 +92,6 @@ export const loadRecruitingData = async () => {
           }))
           .filter(row => row.latitude && row.longitude && row.classYear > 0); // Filter out invalid coordinates
 
-        console.log('Processed data:', processedData.length, 'valid rows');
-        console.log('Sample processed row:', processedData[0]);
         
         cachedData = processedData;
         resolve(processedData);
@@ -94,7 +112,7 @@ export const loadRecruitingData = async () => {
  * @returns {Array} Sorted list of unique colleges
  */
 export const getUniqueColleges = (data) => {
-  const colleges = [...new Set(data.map(row => row.committedto))];
+  const colleges = [...new Set(data.map(row => row.committedTo))];
   return colleges.sort();
 };
 
@@ -194,13 +212,13 @@ export const aggregateCities = (data) => {
   const cityMap = new Map();
 
   data.forEach(row => {
-    const key = `${row.city}|${row.stateprovince}`;
+    const key = `${row.city}|${row.stateProvince}`;
     if (cityMap.has(key)) {
       cityMap.get(key).count += 1;
     } else {
       cityMap.set(key, {
         city: row.city,
-        state: row.stateprovince,
+        state: row.stateProvince,
         lat: row.latitude,
         lon: row.longitude,
         count: 1
@@ -220,15 +238,105 @@ export const aggregateColleges = (data) => {
   const collegeMap = new Map();
 
   data.forEach(row => {
-    if (collegeMap.has(row.committedto)) {
-      collegeMap.get(row.committedto).count += 1;
+    if (collegeMap.has(row.committedTo)) {
+      collegeMap.get(row.committedTo).count += 1;
     } else {
-      collegeMap.set(row.committedto, {
-        college: row.committedto,
+      collegeMap.set(row.committedTo, {
+        college: row.committedTo,
         count: 1
       });
     }
   });
 
   return Array.from(collegeMap.values());
+};
+
+/**
+ * Load Alabama recruiting data using the notebook approach
+ * @returns {Promise<Array>} Alabama pathway data
+ */
+export const loadAlabamaData = async () => {
+  try {
+    // Load both data and college coordinates
+    const [recruitingData, collegeCoords] = await Promise.all([
+      loadRecruitingData(),
+      loadCollegeCoords()
+    ]);
+
+
+    // Filter to recent years (2020+) like the notebook
+    const recentData = recruitingData.filter(row => 
+      row.classYear >= 2020 && 
+      row.latitude && 
+      row.longitude && 
+      row.country === 'USA' &&
+      collegeCoords[row.committedTo] // Only include colleges we have coordinates for
+    );
+
+
+    // Filter specifically for Alabama
+    const alabamaData = recentData.filter(row => 
+      row.committedTo && row.committedTo.toLowerCase().includes('alabama')
+    );
+
+
+    // Aggregate pathways exactly like the notebook
+    const pathwayCounts = new Map();
+    
+    alabamaData.forEach(row => {
+      const key = `${row.school}|${row.committedTo}`;
+      if (pathwayCounts.has(key)) {
+        pathwayCounts.get(key).count += 1;
+      } else {
+        pathwayCounts.set(key, {
+          school: row.school,
+          committedTo: row.committedTo,
+          city: row.city,
+          stateProvince: row.stateProvince,
+          count: 1,
+          latitude: row.latitude,
+          longitude: row.longitude
+        });
+      }
+    });
+
+    // Calculate city and college totals for hover info
+    const cityCounts = new Map();
+    const collegeCounts = new Map();
+
+    alabamaData.forEach(row => {
+      // City counts
+      const cityKey = `${row.city}|${row.stateProvince}`;
+      cityCounts.set(cityKey, (cityCounts.get(cityKey) || 0) + 1);
+      
+      // College counts
+      collegeCounts.set(row.committedTo, (collegeCounts.get(row.committedTo) || 0) + 1);
+    });
+
+    // Transform to the exact format expected by the visualization
+    const pathways = Array.from(pathwayCounts.values()).map(pathway => {
+      const collegeCoord = collegeCoords[pathway.committedTo];
+      const cityKey = `${pathway.city}|${pathway.stateProvince}`;
+      
+      return {
+        hs_name: pathway.school,
+        hs_lat: pathway.latitude,
+        hs_lon: pathway.longitude,
+        hs_city: pathway.city,
+        hs_state: pathway.stateProvince,
+        college_name: pathway.committedTo,
+        college_lat: collegeCoord ? collegeCoord.lat : 33.2098, // Default to Alabama coordinates
+        college_lon: collegeCoord ? collegeCoord.lon : -87.5692,
+        recruit_count: pathway.count,
+        city_total_recruits: cityCounts.get(cityKey) || 0,
+        college_total_recruits: collegeCounts.get(pathway.committedTo) || 0
+      };
+    });
+
+
+    return pathways;
+  } catch (error) {
+    console.error('Error loading Alabama data:', error);
+    return [];
+  }
 };
