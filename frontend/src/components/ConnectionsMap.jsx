@@ -11,7 +11,6 @@ import {
   Select,
   MenuItem,
   Slider,
-  Grid,
   FormControlLabel,
   Checkbox
 } from '@mui/material';
