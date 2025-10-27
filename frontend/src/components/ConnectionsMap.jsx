@@ -31,11 +31,11 @@ const ConnectionsMap = () => {
         setLoading(true);
         
         // Load CSV data
-        const csvResponse = await fetch('/data/recruiting_data.csv');
+        const csvResponse = await fetch(`${process.env.PUBLIC_URL || ''}/data/recruiting_data.csv`);
         const csvText = await csvResponse.text();
         
         // Load geocode data
-        const geocodeResponse = await fetch('/data/geocode_cache.json');
+        const geocodeResponse = await fetch(`${process.env.PUBLIC_URL || ''}/data/geocode_cache.json`);
         const geocodeData = await geocodeResponse.json();
         
         // Parse CSV
