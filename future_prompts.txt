@@ -1,9 +1,3 @@
 This is a list of features to implement
 
-1) Publish to Github
-2) Add a new page to compare connections or circles of 2 different time periods. (left and right side)
-3) Maybe add some change over time graphs
-    - College recruitment over time
-    - Amount of people cities send out over time
-    - How much of each city a college receives over time
-4) Filter back in Interantional recruits. Add extra dots at the edge of the map to do this (specifcally hawaii)
+1) Interantional Recruits on the circles graph
