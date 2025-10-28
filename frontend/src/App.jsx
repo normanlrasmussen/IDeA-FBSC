@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import ConnectionsMap from './components/ConnectionsMap';
@@ -27,6 +27,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ConnectionsMap />} />
             <Route path="/circles" element={<CirclesMap />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
       </Router>
