@@ -2,7 +2,11 @@
 __pycache__/
 *.py[codz]
 *$py.class
+# Data directories (but allow frontend public data for deployment)
 data/
+!frontend/public/data/
+!frontend/public/data/*.csv
+!frontend/public/data/*.json
 
 # C extensions
 *.so
