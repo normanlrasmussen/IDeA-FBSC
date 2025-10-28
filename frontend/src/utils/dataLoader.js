@@ -15,8 +15,7 @@ export const loadCollegeCoords = async () => {
   }
 
   try {
-    const baseUrl = process.env.PUBLIC_URL || '';
-    const response = await fetch(`${baseUrl}/data/geocode_cache.json`);
+    const response = await fetch(`data/geocode_cache.json`);
     const geocodeCache = await response.json();
     
     // Convert cache format to coordinate format
@@ -51,8 +50,7 @@ export const loadRecruitingData = async () => {
   }
 
   dataPromise = new Promise((resolve, reject) => {
-    const baseUrl = process.env.PUBLIC_URL || '';
-    Papa.parse(`${baseUrl}/data/recruiting_data.csv`, {
+    Papa.parse(`data/recruiting_data.csv`, {
       header: true,
       download: true,
       skipEmptyLines: true,
