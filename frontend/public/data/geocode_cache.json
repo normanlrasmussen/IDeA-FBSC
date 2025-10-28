@@ -1,0 +1,1285 @@
+{
+  "Miami": {
+    "latitude": 25.7741566,
+    "longitude": -80.1935973,
+    "address": "Miami, Miami-Dade County, Florida, United States of America"
+  },
+  "Florida": {
+    "latitude": 27.7567667,
+    "longitude": -81.4639835,
+    "address": "Florida, United States of America"
+  },
+  "Michigan State": {
+    "latitude": 42.7023794,
+    "longitude": -84.4803869,
+    "address": "Michigan State University, 426, Auditorium Road, North Neighborhood, East Lansing, Ingham County, Michigan, 48824, United States of America"
+  },
+  "Florida State": {
+    "latitude": 26.6422594,
+    "longitude": -80.2047546,
+    "address": "USA Sports Therapy Wellington, State Road 7, Wellington, Palm Beach County, Florida, 33447, United States of America"
+  },
+  "Colorado": {
+    "latitude": 38.7251776,
+    "longitude": -105.607716,
+    "address": "Colorado, United States of America"
+  },
+  "Stanford": {
+    "latitude": 37.4265407,
+    "longitude": -122.1703055,
+    "address": "Stanford, Palo Alto, Santa Clara County, California, United States of America"
+  },
+  "Texas": {
+    "latitude": 31.2638905,
+    "longitude": -98.5456116,
+    "address": "Texas, United States of America"
+  },
+  "Ohio State": {
+    "latitude": 40.0056802,
+    "longitude": -83.0286612,
+    "address": "The Ohio State University, 281, West Lane Avenue, Columbus, Sharon, Franklin County, Ohio, 43210, United States of America"
+  },
+  "Tennessee": {
+    "latitude": 35.7730076,
+    "longitude": -86.2820081,
+    "address": "Tennessee, United States of America"
+  },
+  "Kentucky": {
+    "latitude": 37.5726028,
+    "longitude": -85.1551411,
+    "address": "Kentucky, United States of America"
+  },
+  "USC": {
+    "latitude": 34.021869,
+    "longitude": -118.2858579,
+    "address": "University of Southern California, South Figueroa Street, University Park, Historic South-Central, Los Angeles, Los Angeles County, California, 90089, United States of America"
+  },
+  "Alabama": {
+    "latitude": 33.2588817,
+    "longitude": -86.8295337,
+    "address": "Alabama, United States of America"
+  },
+  "Georgia": {
+    "latitude": 32.3293809,
+    "longitude": -83.1137366,
+    "address": "Georgia, United States of America"
+  },
+  "Syracuse": {
+    "latitude": 43.0481221,
+    "longitude": -76.1474244,
+    "address": "City of Syracuse, Onondaga County, New York, United States of America"
+  },
+  "Oklahoma": {
+    "latitude": 34.9550817,
+    "longitude": -97.2684063,
+    "address": "Oklahoma, United States of America"
+  },
+  "Auburn": {
+    "latitude": 32.6098566,
+    "longitude": -85.4807825,
+    "address": "Auburn, Lee County, Alabama, United States of America"
+  },
+  "Virginia": {
+    "latitude": 37.1232245,
+    "longitude": -78.4927721,
+    "address": "Virginia, United States of America"
+  },
+  "UCLA": {
+    "latitude": 34.0708777,
+    "longitude": -118.4468503,
+    "address": "University of California, Los Angeles, Appomattox Drive, Veterans Administration, Los Angeles County, California, 90073, United States of America"
+  },
+  "Nebraska": {
+    "latitude": 41.7370229,
+    "longitude": -99.5873816,
+    "address": "Nebraska, United States of America"
+  },
+  "Penn State": {
+    "latitude": 40.8025835,
+    "longitude": -77.8559383,
+    "address": "Pennsylvania State University, Abby Plaza, Overlook Heights, Krumrine, Ferguson Township, Centre County, Pennsylvania, 16803, United States of America"
+  },
+  "Michigan": {
+    "latitude": 43.6211955,
+    "longitude": -84.6824346,
+    "address": "Michigan, United States of America"
+  },
+  "Georgia Tech": {
+    "latitude": 33.7760948,
+    "longitude": -84.3988077,
+    "address": "Georgia Tech, Center Street, Home Park, Atlanta, Fulton County, Georgia, 30332, United States of America"
+  },
+  "Arkansas": {
+    "latitude": 35.2048883,
+    "longitude": -92.4479108,
+    "address": "Arkansas, United States of America"
+  },
+  "Notre Dame": {
+    "latitude": 41.7045677,
+    "longitude": -86.2382203,
+    "address": "University of Notre Dame du Lac, Ironwood Road, Maple Lane, Notre Dame, Saint Joseph County, Indiana, 46556, United States of America"
+  },
+  "Arizona State": {
+    "latitude": 33.4213174,
+    "longitude": -111.9331631,
+    "address": "Arizona State University, 1151, South Forest Avenue, Tempe Junction, Tempe, Maricopa County, Arizona, 85281, United States of America"
+  },
+  "Kansas State": {
+    "latitude": 39.2094557,
+    "longitude": -96.5884991,
+    "address": "Kansas State University, Cedar Acres Drive, Manhattan, Riley County, Kansas, 66506, United States of America"
+  },
+  "LSU": {
+    "latitude": 30.4062005,
+    "longitude": -91.1854129,
+    "address": "Louisiana State University, Illinois Street, Nicholson Estates, Baton Rouge, East Baton Rouge Parish, Louisiana, 70803, United States of America"
+  },
+  "Washington": {
+    "latitude": 38.8950368,
+    "longitude": -77.0365427,
+    "address": "Washington, District of Columbia, United States of America"
+  },
+  "Iowa": {
+    "latitude": 41.9216734,
+    "longitude": -93.3122705,
+    "address": "Iowa, United States of America"
+  },
+  "Texas A&M": {
+    "latitude": 30.6108618,
+    "longitude": -96.3520606,
+    "address": "Texas A&M University, 400, Bizzell Street, The Gardens Apartments, College Station, Brazos County, Texas, 77843, United States of America"
+  },
+  "Boston College": {
+    "latitude": 42.3354481,
+    "longitude": -71.1682665,
+    "address": "Boston College, Centre Street, Newton Centre, Newton, Middlesex County, Massachusetts, 02159, United States of America"
+  },
+  "Clemson": {
+    "latitude": 34.6850749,
+    "longitude": -82.8364111,
+    "address": "Clemson, Pickens County, South Carolina, 29631, United States of America"
+  },
+  "Wisconsin": {
+    "latitude": 44.4308975,
+    "longitude": -89.6884637,
+    "address": "Wisconsin, United States of America"
+  },
+  "Maryland": {
+    "latitude": 39.5162401,
+    "longitude": -76.9382069,
+    "address": "Maryland, United States of America"
+  },
+  "Vanderbilt": {
+    "latitude": 28.822218,
+    "longitude": -96.6160175,
+    "address": "Vanderbilt, Jackson County, Texas, 77991, United States of America"
+  },
+  "Virginia Tech": {
+    "latitude": 37.2219268,
+    "longitude": -80.4272818,
+    "address": "Virginia Tech, 800, Drillfield Drive, Keister Addition, Blacksburg, Montgomery County, Virginia, 24061, United States of America"
+  },
+  "Indiana": {
+    "latitude": 40.3270127,
+    "longitude": -86.1746933,
+    "address": "Indiana, United States of America"
+  },
+  "Oklahoma State": {
+    "latitude": 36.1313523,
+    "longitude": -97.0890651,
+    "address": "Oklahoma State University, Stillwater, Payne County, Oklahoma, United States of America"
+  },
+  "Ole Miss": {
+    "latitude": 30.6715557,
+    "longitude": -94.8438514,
+    "address": "Ole Miss, Polk County, Texas, 77351, United States of America"
+  },
+  "Pittsburgh": {
+    "latitude": 40.4416941,
+    "longitude": -79.9900861,
+    "address": "Pittsburgh, Allegheny County, Pennsylvania, United States of America"
+  },
+  "California": {
+    "latitude": 36.7014631,
+    "longitude": -118.755997,
+    "address": "California, United States of America"
+  },
+  "Oregon State": {
+    "latitude": 44.563056,
+    "longitude": -123.2839234,
+    "address": "Oregon State University, 1500, Southwest Jefferson Way, Corvallis, Benton County, Oregon, 97331, United States of America"
+  },
+  "South Carolina": {
+    "latitude": 33.6874388,
+    "longitude": -80.4363743,
+    "address": "South Carolina, United States of America"
+  },
+  "Oregon": {
+    "latitude": 43.9792797,
+    "longitude": -120.737257,
+    "address": "Oregon, United States of America"
+  },
+  "Missouri": {
+    "latitude": 38.7604815,
+    "longitude": -92.5617875,
+    "address": "Missouri, United States of America"
+  },
+  "Memphis": {
+    "latitude": 35.1460249,
+    "longitude": -90.0517638,
+    "address": "Memphis, Shelby County, West Tennessee, Tennessee, United States of America"
+  },
+  "North Carolina": {
+    "latitude": 35.6729639,
+    "longitude": -79.0392919,
+    "address": "North Carolina, United States of America"
+  },
+  "Illinois": {
+    "latitude": 40.0796606,
+    "longitude": -89.4337288,
+    "address": "Illinois, United States of America"
+  },
+  "Purdue": {
+    "latitude": 40.430028,
+    "longitude": -86.9264211,
+    "address": "Purdue University, 610, West Lafayette, Tippecanoe County, Indiana, 47907, United States of America"
+  },
+  "Arizona": {
+    "latitude": 34.395342,
+    "longitude": -111.763275,
+    "address": "Arizona, United States of America"
+  },
+  "Northwestern": {
+    "latitude": 42.0557157,
+    "longitude": -87.6752945,
+    "address": "Northwestern University, 633, Clark Street, Downtown, Evanston, Evanston Township, Cook County, Illinois, 60208, United States of America"
+  },
+  "NC State": {
+    "latitude": 35.7718497,
+    "longitude": -78.674087,
+    "address": "North Carolina State University, Pullen Road, Forest Park, Oberlin, Raleigh, Wake County, North Carolina, 27695, United States of America"
+  },
+  "Mississippi State": {
+    "latitude": 33.4386876,
+    "longitude": -88.7943232,
+    "address": "Mississippi State University, 75, George Perry Street, Oktibbeha County, Mississippi, 39762, United States of America"
+  },
+  "Colorado State": {
+    "latitude": 40.0142508,
+    "longitude": -105.2532884,
+    "address": "BBVA, 3000, Arapahoe Avenue, Boulder, Boulder County, Colorado, 80303, United States of America"
+  },
+  "Middle Tennessee": {
+    "latitude": 35.8326703,
+    "longitude": -86.6012557,
+    "address": "Middle Tennessee, Tennessee, United States of America"
+  },
+  "BYU": {
+    "latitude": 40.2554083,
+    "longitude": -111.6496832,
+    "address": "Brigham Young University, North 420 East, Pleasant View, Provo, Utah County, Utah, 84602, United States of America"
+  },
+  "NaN": {
+    "latitude": 29.8249495,
+    "longitude": -95.4786754,
+    "address": "Nan, Houston, Harris County, Texas, 77092, United States of America"
+  },
+  "Rutgers": {
+    "latitude": 40.5204169,
+    "longitude": -74.4645303,
+    "address": "Rutgers University, Bartlett Street, New Brunswick, Middlesex County, New Jersey, 08901, United States of America"
+  },
+  "Baylor": {
+    "latitude": 33.574962,
+    "longitude": -99.2000611,
+    "address": "Baylor County, Texas, 76380, United States of America"
+  },
+  "West Virginia": {
+    "latitude": 38.4758406,
+    "longitude": -80.8408415,
+    "address": "West Virginia, United States of America"
+  },
+  "Toledo": {
+    "latitude": 41.6529143,
+    "longitude": -83.5378173,
+    "address": "Toledo, Lucas County, Ohio, United States of America"
+  },
+  "TCU": {
+    "latitude": 32.7080148,
+    "longitude": -97.3611939,
+    "address": "Texas Christian University, Walsh Court, Fort Worth, Tarrant County, Texas, 76109, United States of America"
+  },
+  "Texas Tech": {
+    "latitude": 33.5937526,
+    "longitude": -101.8995955,
+    "address": "Texas Tech University, 2500, Broadway, Lubbock, Lubbock County, Texas, 79409, United States of America"
+  },
+  "Tulane": {
+    "latitude": 30.0957662,
+    "longitude": -93.8387808,
+    "address": "Tulane, Orange County, Texas, 77639, United States of America"
+  },
+  "Southern Miss": {
+    "latitude": 31.3286452,
+    "longitude": -89.3367312,
+    "address": "University of Southern Mississippi, 118, College Drive, Hattiesburg, Forrest County, Mississippi, 39406, United States of America"
+  },
+  "East Carolina": {
+    "latitude": 35.6328512,
+    "longitude": -77.4852672,
+    "address": "East Carolina University, 1001, East 5th Street, University Park, Hartington and Williams, Greenville, Pitt County, North Carolina, 27858, United States of America"
+  },
+  "Minnesota": {
+    "latitude": 45.9896587,
+    "longitude": -94.6113288,
+    "address": "Minnesota, United States of America"
+  },
+  "Houston": {
+    "latitude": 29.7589382,
+    "longitude": -95.3676974,
+    "address": "Houston, Harris County, Texas, United States of America"
+  },
+  "Army": {
+    "latitude": 39.6601455,
+    "longitude": -119.8872598,
+    "address": "Army, Stead, Reno, Washoe County, Nevada, 89508, United States of America"
+  },
+  "Utah": {
+    "latitude": 39.4225192,
+    "longitude": -111.714358,
+    "address": "Utah, United States of America"
+  },
+  "UAB": {
+    "latitude": 33.5016153,
+    "longitude": -86.8060476,
+    "address": "University of Alabama at Birmingham, 1720, University Boulevard, Five Points South, Birmingham, Jefferson County, Alabama, 35294, United States of America"
+  },
+  "Wyoming": {
+    "latitude": 43.1700264,
+    "longitude": -107.568534,
+    "address": "Wyoming, United States of America"
+  },
+  "Louisville": {
+    "latitude": 38.2542376,
+    "longitude": -85.759407,
+    "address": "Louisville, Jefferson County, Kentucky, United States of America"
+  },
+  "Iowa State": {
+    "latitude": 42.0707024,
+    "longitude": -90.6448067,
+    "address": "Iowa State, Fawn Creek Court, Maquoketa, Jackson County, Iowa, 52060, United States of America"
+  },
+  "Temple": {
+    "latitude": 31.0983747,
+    "longitude": -97.3429563,
+    "address": "Temple, Bell County, Texas, United States of America"
+  },
+  "Cincinnati": {
+    "latitude": 39.1014537,
+    "longitude": -84.5124602,
+    "address": "Cincinnati, Hamilton County, Ohio, United States of America"
+  },
+  "Duke": {
+    "latitude": 37.6603199,
+    "longitude": -92.010715,
+    "address": "Duke, Phelps County, Missouri, 65461, United States of America"
+  },
+  "Tulsa": {
+    "latitude": 36.1563122,
+    "longitude": -95.9927516,
+    "address": "Tulsa, Tulsa County, Oklahoma, United States of America"
+  },
+  "Bowling Green": {
+    "latitude": 36.9929203,
+    "longitude": -86.4428677,
+    "address": "Bowling Green, Warren County, Kentucky, 42101, United States of America"
+  },
+  "New Mexico": {
+    "latitude": 34.5802074,
+    "longitude": -105.996047,
+    "address": "New Mexico, United States of America"
+  },
+  "Louisiana Tech": {
+    "latitude": 32.5261061,
+    "longitude": -92.6481217,
+    "address": "Louisiana Tech University, 305, Wisteria Street, University Hills, Ruston, Lincoln Parish, Louisiana, 71272, United States of America"
+  },
+  "Buffalo": {
+    "latitude": 42.8867166,
+    "longitude": -78.8783922,
+    "address": "Buffalo, Erie County, New York, United States of America"
+  },
+  "San Diego State": {
+    "latitude": 40.7570649,
+    "longitude": -73.872551,
+    "address": "San Diego, 9513, Northern Boulevard, East Elmhurst, Queens, Queens County, City of New York, New York, 11372, United States of America"
+  },
+  "Louisiana": {
+    "latitude": 30.8703881,
+    "longitude": -92.007126,
+    "address": "Louisiana, United States of America"
+  },
+  "South Florida": {
+    "latitude": 37.1670484,
+    "longitude": -94.8463851,
+    "address": "South Florida, Columbus, Cherokee County, Kansas, 66725, United States of America"
+  },
+  "SMU": {
+    "latitude": 32.8418011,
+    "longitude": -96.7815281,
+    "address": "Southern Methodist University, 6425, Bush Avenue, University Park, Dallas County, Texas, 75205, United States of America"
+  },
+  "Miami (OH)": {
+    "latitude": 39.6248337,
+    "longitude": -84.2158464,
+    "address": "Esko USA, 8535, Gander Creek Drive, Newmark Centre, Miamisburg, Miami Township, Montgomery County, Ohio, 45342, United States of America"
+  },
+  "Western Michigan": {
+    "latitude": 42.2113725,
+    "longitude": -86.2760155,
+    "address": "Western, Paw Paw Lake, Coloma Charter Township, Berrien County, Michigan, 49098, United States of America"
+  },
+  "Washington State": {
+    "latitude": 47.2868352,
+    "longitude": -120.212613,
+    "address": "Washington, United States of America"
+  },
+  "San Jos\u00e9 State": {
+    "latitude": 37.3351903,
+    "longitude": -121.8812255,
+    "address": "San Jos\u00e9 State University Main Campus, 1, South 9th Street, Horace Mann, San Jose, Santa Clara County, California, 95192, United States of America"
+  },
+  "UCF": {
+    "latitude": 28.599591,
+    "longitude": -81.1971284,
+    "address": "University of Central Florida, 4000, Central Florida Boulevard, Orlando, Orange County, Florida, 32816, United States of America"
+  },
+  "UConn": {
+    "latitude": 41.8111114,
+    "longitude": -72.2483889,
+    "address": "University of Connecticut, North Eagleville Road, Mansfield, Capitol Planning Region, Connecticut, 06269, United States of America"
+  },
+  "New Mexico State": {
+    "latitude": 40.6009784,
+    "longitude": -74.0561689,
+    "address": "USS New Mexico Court, Staten Island, Richmond County, City of New York, New York, 10305, United States of America"
+  },
+  "Marshall": {
+    "latitude": 41.0324537,
+    "longitude": -89.2998456,
+    "address": "Marshall County, Illinois, United States of America"
+  },
+  "Idaho": {
+    "latitude": 43.6447642,
+    "longitude": -114.015407,
+    "address": "Idaho, United States of America"
+  },
+  "Hudson Valley": {
+    "latitude": 41.3160979,
+    "longitude": -74.1262454,
+    "address": "Hudson Valley, Village of Woodbury, Town of Woodbury, Orange County, New York, United States of America"
+  },
+  "Florida International": {
+    "latitude": 30.4818022,
+    "longitude": -81.6616432,
+    "address": "Mercedes-Benz USA, International Parkway, Airport Metro, Jacksonville, Duval County, Florida, 32218, United States of America"
+  },
+  "Nevada": {
+    "latitude": 39.5158825,
+    "longitude": -116.853722,
+    "address": "Nevada, United States of America"
+  },
+  "Hawai'i": {
+    "latitude": 19.5938015,
+    "longitude": -155.4283701,
+    "address": "Hawaii, United States of America"
+  },
+  "Boise State": {
+    "latitude": 43.6040339,
+    "longitude": -116.2067442,
+    "address": "Sign Shop at Boise State University, West University Drive, Boise, Ada County, Idaho, 83725, United States of America"
+  },
+  "Utah State": {
+    "latitude": 41.7526959,
+    "longitude": -111.808733,
+    "address": "Utah State University, 1950 North, North Logan, Cache County, Utah, 84341, United States of America"
+  },
+  "Navy": {
+    "latitude": 38.887531,
+    "longitude": -77.3925203,
+    "address": "Navy, Fairfax County, Virginia, United States of America"
+  },
+  "Central Michigan": {
+    "latitude": 42.3310044,
+    "longitude": -83.0472646,
+    "address": "Central Michigan, 777, Woodward Avenue, Greektown, Detroit, Wayne County, Michigan, 48226, United States of America"
+  },
+  "Akron": {
+    "latitude": 41.083064,
+    "longitude": -81.518485,
+    "address": "Akron, Summit County, Ohio, United States of America"
+  },
+  "Air Force": {
+    "latitude": 55.244952,
+    "longitude": -162.7591547,
+    "address": "Air Force, Cold Bay, Aleutians East Borough, Alaska, United States of America"
+  },
+  "Arkansas State": {
+    "latitude": 36.4761483,
+    "longitude": -94.2469269,
+    "address": "Caf\u00e9 USA, 426, East Lancashire Boulevard, Dug Hill, Bella Vista, Benton County, Arkansas, 72715, United States of America"
+  },
+  "Northern Illinois": {
+    "latitude": 41.8137876,
+    "longitude": -88.0662396,
+    "address": "Northern Illinois, 4100, Main Trail Loop 1, Lisle, DuPage County, Illinois, 60532, United States of America"
+  },
+  "Wake Forest": {
+    "latitude": 35.9803138,
+    "longitude": -78.5103731,
+    "address": "Wake Forest, Wake County, North Carolina, United States of America"
+  },
+  "UNLV": {
+    "latitude": 36.1079411,
+    "longitude": -115.1439051,
+    "address": "University of Nevada, Las Vegas, 4505, South Maryland Parkway, Filipino Town, Las Vegas, Clark County, Nevada, 89154, United States of America"
+  },
+  "Kansas": {
+    "latitude": 38.27312,
+    "longitude": -98.5821872,
+    "address": "Kansas, United States of America"
+  },
+  "Ohio": {
+    "latitude": 40.2253569,
+    "longitude": -82.6881395,
+    "address": "Ohio, United States of America"
+  },
+  "UL Monroe": null,
+  "Eastern Michigan": {
+    "latitude": 42.2522463,
+    "longitude": -83.6245615,
+    "address": "Eastern Michigan University, Putnam-Phelps, Riverside, Ypsilanti, Washtenaw County, Michigan, 48197, United States of America"
+  },
+  "Rice": {
+    "latitude": 38.3266261,
+    "longitude": -98.2007179,
+    "address": "Rice County, Kansas, United States of America"
+  },
+  "Ball State": {
+    "latitude": 40.2097296,
+    "longitude": -85.4112151,
+    "address": "Ball State University, North Janney Avenue, Muncie, Delaware County, Indiana, 47304, United States of America"
+  },
+  "Fresno State": {
+    "latitude": 36.8209963,
+    "longitude": -119.7372976,
+    "address": "California State University, Fresno, 5241, North Maple Avenue, Fresno, Fresno County, California, 93740, United States of America"
+  },
+  "Kent State": {
+    "latitude": 41.1442325,
+    "longitude": -81.3398321,
+    "address": "Kent State University, Haymaker Parkway, Gateway, Kent, Portage County, Ohio, 44242, United States of America"
+  },
+  "Southern Illinois": {
+    "latitude": 37.7083423,
+    "longitude": -89.2275556,
+    "address": "Southern Illinois University Carbondale, 1263, Lincoln Drive, Lake Shore Drive Area, Carbondale, Jackson County, Illinois, 62901, United States of America"
+  },
+  "North Texas": {
+    "latitude": 29.8219121,
+    "longitude": -95.5447799,
+    "address": "Murphy USA, Gessner Road, Spring Branch, Spring Branch North, Houston, Harris County, Texas, 77043, United States of America"
+  },
+  "UTEP": {
+    "latitude": 31.7757048,
+    "longitude": -106.5062875,
+    "address": "The University of Texas at El Paso, East Robinson Avenue, El Paso, El Paso County, Texas, 79902, United States of America"
+  },
+  "Florida Atlantic": {
+    "latitude": 26.3743445,
+    "longitude": -80.1027236,
+    "address": "Florida Atlantic University - Boca Raton Campus, 777, Glades Road, Boca Raton, Palm Beach County, Florida, 33431, United States of America"
+  },
+  "Princeton": {
+    "latitude": 40.3496953,
+    "longitude": -74.6597376,
+    "address": "Princeton, Mercer County, New Jersey, United States of America"
+  },
+  "Alabama State": {
+    "latitude": 34.7442425,
+    "longitude": -87.6660053,
+    "address": "BBVA, State Street, East Haven, Muscle Shoals, Colbert County, Alabama, 35662, United States of America"
+  },
+  "Western Kentucky": {
+    "latitude": 36.984529,
+    "longitude": -86.457647,
+    "address": "Western Kentucky University, 1906, College Heights Boulevard, Bowling Green, Warren County, Kentucky, 42101, United States of America"
+  },
+  "Georgia Southern": {
+    "latitude": 32.4214381,
+    "longitude": -81.7845053,
+    "address": "Georgia Southern University, Malecki Drive, Sussex Commons, Statesboro, Bulloch County, Georgia, 30460, United States of America"
+  },
+  "Norfolk State": {
+    "latitude": 36.8482215,
+    "longitude": -76.2629642,
+    "address": "Norfolk State University, Claiborne Avenue, Brambleton, Berkley, Norfolk, Virginia, 23504, United States of America"
+  },
+  "New Hampshire": {
+    "latitude": 43.4849133,
+    "longitude": -71.6553992,
+    "address": "New Hampshire, United States of America"
+  },
+  "Georgia State": {
+    "latitude": 33.7501652,
+    "longitude": -84.3859566,
+    "address": "Georgia State, 2, Martin Luther King Jr Drive Southeast, Capitol Gateway, Atlanta, Fulton County, Georgia, 30303, United States of America"
+  },
+  "Liberty": {
+    "latitude": 30.0856736,
+    "longitude": -94.7856262,
+    "address": "Liberty County, Texas, United States of America"
+  },
+  "Texas State": {
+    "latitude": 29.8910885,
+    "longitude": -97.9376214,
+    "address": "Texas State University, 601, University Drive, San Marcos, Hays County, Texas, 78666, United States of America"
+  },
+  "Northern Iowa": {
+    "latitude": 42.5149569,
+    "longitude": -92.4629522,
+    "address": "University of Northern Iowa, 1227, West 27th Street, Cedar Falls, Black Hawk County, Iowa, 50614, United States of America"
+  },
+  "Holy Cross": {
+    "latitude": 42.6005516,
+    "longitude": -90.9956855,
+    "address": "Holy Cross, Dubuque County, Iowa, United States of America"
+  },
+  "Villanova": {
+    "latitude": 40.0373323,
+    "longitude": -75.3490769,
+    "address": "Villanova, Radnor, Radnor Township, Delaware County, Pennsylvania, 19085, United States of America"
+  },
+  "Alabama A&M": {
+    "latitude": 34.6816314,
+    "longitude": -86.8456957,
+    "address": "Mazda Toyota Manufacturing USA, Huntsville, Limestone County, Alabama, United States of America"
+  },
+  "South Carolina State": {
+    "latitude": 35.006338,
+    "longitude": -80.9314498,
+    "address": "USA Tire & Auto Care, Sanders Street, Tom Hall Street Corridor District, Kanawha Hills, Fort Mill, York County, South Carolina, 29715, United States of America"
+  },
+  "South Alabama": {
+    "latitude": 43.0736988,
+    "longitude": -78.3351887,
+    "address": "South Alabama, Town of Alabama, Genesee County, New York, United States of America"
+  },
+  "Old Dominion": {
+    "latitude": 37.827642,
+    "longitude": -78.666127,
+    "address": "Old Dominion, Albemarle County, Virginia, 22969, United States of America"
+  },
+  "Harvard": {
+    "latitude": 42.3657432,
+    "longitude": -71.1222139,
+    "address": "Harvard University, Massachusetts Avenue, Cambridge, Middlesex County, Massachusetts, 02140, United States of America"
+  },
+  "UTSA": {
+    "latitude": 29.583331,
+    "longitude": -98.6194451,
+    "address": "The University of Texas at San Antonio, 1, UTSA Circle, San Antonio, Bexar County, Texas, 78249, United States of America"
+  },
+  "Montana": {
+    "latitude": 47.3752671,
+    "longitude": -109.638757,
+    "address": "Montana, United States of America"
+  },
+  "Massachusetts": {
+    "latitude": 42.3788774,
+    "longitude": -72.032366,
+    "address": "Massachusetts, United States of America"
+  },
+  "Bethune-Cookman": {
+    "latitude": 29.2118536,
+    "longitude": -81.0319825,
+    "address": "Bethune-Cookman University, 640, Doctor Mary McLeod Bethune Boulevard, Daytona Beach, Volusia County, Florida, 32114, United States of America"
+  },
+  "App State": {
+    "latitude": 42.6521145,
+    "longitude": -73.7565344,
+    "address": "NY State Capitol Eastern Approach Rehabilitation, Downtown, City of Albany, Albany County, New York, United States of America"
+  },
+  "Western Carolina": {
+    "latitude": 35.3100146,
+    "longitude": -83.1990402,
+    "address": "Western Carolina University, 65, Cullowhee Connector, Cullowhee, Jackson County, North Carolina, 28723, United States of America"
+  },
+  "Indiana State": {
+    "latitude": 39.8141605,
+    "longitude": -77.2162745,
+    "address": "Indiana State, East Confederate Avenue, Cumberland Township, Adams County, Pennsylvania, 17325, United States of America"
+  },
+  "North Dakota State": {
+    "latitude": 47.6743953,
+    "longitude": -117.3998031,
+    "address": "North Dakota Street, Logan, Spokane, Spokane County, Washington, 99258, United States of America"
+  },
+  "Eastern Illinois": {
+    "latitude": 40.1248864,
+    "longitude": -88.1922618,
+    "address": "Eastern (East Side), North Eastern Avenue, Champaign County, Illinois, 61802, United States of America"
+  },
+  "Eastern Washington": {
+    "latitude": 34.0005083,
+    "longitude": -118.159631,
+    "address": "Eastern / Washington, South Eastern Avenue, Commerce, Los Angeles County, California, 90040, United States of America"
+  },
+  "Wagner": {
+    "latitude": 43.079716,
+    "longitude": -98.293134,
+    "address": "Wagner, Lawrence Township, Charles Mix County, South Dakota, 57380, United States of America"
+  },
+  "Portland State": {
+    "latitude": 45.5118121,
+    "longitude": -122.6849306,
+    "address": "Portland State University, 724, Southwest Harrison Street, University District, Downtown, Portland, Multnomah County, Oregon, 97201, United States of America"
+  },
+  "McNeese": {
+    "latitude": 30.1806248,
+    "longitude": -93.2162922,
+    "address": "McNeese State University, Colonel Tony Polk Drive, University Place, Lake Charles, Calcasieu Parish, Louisiana, 70609, United States of America"
+  },
+  "James Madison": {
+    "latitude": 40.7255739,
+    "longitude": -73.8474473,
+    "address": "James Madison, 68th Road, Forest Hills, Queens, Queens County, City of New York, New York, 11375, United States of America"
+  },
+  "Dartmouth": {
+    "latitude": 43.7046756,
+    "longitude": -72.2942089,
+    "address": "Dartmouth College, River Road, Norwich, Windsor County, Vermont, 03755, United States of America"
+  },
+  "Pennsylvania": {
+    "latitude": 40.9699889,
+    "longitude": -77.7278831,
+    "address": "Pennsylvania, United States of America"
+  },
+  "Lamar": {
+    "latitude": 33.6383552,
+    "longitude": -95.582343,
+    "address": "Lamar County, Texas, United States of America"
+  },
+  "Towson": {
+    "latitude": 39.3964591,
+    "longitude": -76.6148148,
+    "address": "Towson, Baltimore County, Maryland, United States of America"
+  },
+  "Delaware State": {
+    "latitude": 39.1867993,
+    "longitude": -75.5423583,
+    "address": "Delaware State University, North Dupont Highway, Dover, Kent County, Delaware, 19901, United States of America"
+  },
+  "Western Illinois": {
+    "latitude": 41.915892,
+    "longitude": -87.6868675,
+    "address": "Western, 1909-1911, North Winnebago Avenue, Wicker Park, West Town, Chicago, West Chicago Township, Cook County, Illinois, 60647, United States of America"
+  },
+  "Hampton": {
+    "latitude": 37.0264414,
+    "longitude": -76.3442846,
+    "address": "Hampton, Virginia, United States of America"
+  },
+  "Chattanooga": {
+    "latitude": 35.0457219,
+    "longitude": -85.3094883,
+    "address": "Chattanooga, Hamilton County, East Tennessee, Tennessee, United States of America"
+  },
+  "Lehigh": {
+    "latitude": 40.6096215,
+    "longitude": -75.6048728,
+    "address": "Lehigh County, Pennsylvania, United States of America"
+  },
+  "Texas Southern": {
+    "latitude": 29.7209058,
+    "longitude": -95.3596267,
+    "address": "Texas Southern University, Sampson Street, College Oaks, Third Ward, Houston, Harris County, Texas, 77004, United States of America"
+  },
+  "Yale": {
+    "latitude": 41.2571306,
+    "longitude": -72.9896696,
+    "address": "Yale University, West Haven, South Central Connecticut Planning Region, Connecticut, 06516, United States of America"
+  },
+  "Southeast Missouri State": {
+    "latitude": 37.3177704,
+    "longitude": -89.5285427,
+    "address": "Southeast Missouri State University, Elfrink Drive, Cape Girardeau, Cape Girardeau County, Missouri, 63701, United States of America"
+  },
+  "Gardner-Webb": {
+    "latitude": 35.2478295,
+    "longitude": -81.670238,
+    "address": "Gardner-Webb University, 110, South Main Street, Boiling Springs, Cleveland County, North Carolina, 28017, United States of America"
+  },
+  "Youngstown State": {
+    "latitude": 41.1067218,
+    "longitude": -80.6477542,
+    "address": "Youngstown State University, 1, University Plaza, YSU, Youngstown, Mahoning County, Ohio, 44555, United States of America"
+  },
+  "Monmouth": {
+    "latitude": 40.2932319,
+    "longitude": -74.1671114,
+    "address": "Monmouth County, New Jersey, United States of America"
+  },
+  "VMI": {
+    "latitude": 37.7913339,
+    "longitude": -79.4355152,
+    "address": "Virginia Military Institute, 319, Letcher Avenue, Lexington, Virginia, 24450, United States of America"
+  },
+  "Weber State": {
+    "latitude": 41.1887229,
+    "longitude": -111.9456028,
+    "address": "Weber State University, 3848, Harrison Boulevard, Ogden, Weber County, Utah, 84408, United States of America"
+  },
+  "Charlotte": {
+    "latitude": 35.2272086,
+    "longitude": -80.8430827,
+    "address": "Charlotte, Mecklenburg County, North Carolina, United States of America"
+  },
+  "Eastern Kentucky": {
+    "latitude": 37.5170432,
+    "longitude": -82.805994,
+    "address": "Eastern, Floyd County, Kentucky, 41622, United States of America"
+  },
+  "Tennessee State": {
+    "latitude": 36.0634051,
+    "longitude": -89.3951707,
+    "address": "Murphy USA, Lake Road, Dyersburg, Dyer County, West Tennessee, Tennessee, 38024, United States of America"
+  },
+  "Montana State": {
+    "latitude": 45.6638859,
+    "longitude": -111.079287,
+    "address": "Montana State University, 100, Stucky Road, The Arrow Townhomes & Flats, Bozeman, Gallatin County, Montana, 59715, United States of America"
+  },
+  "Coastal Carolina": {
+    "latitude": 33.7953227,
+    "longitude": -79.0126785,
+    "address": "Coastal Carolina University, 100, Chanticleer Drive West, Conway, Horry County, South Carolina, 29528, United States of America"
+  },
+  "North Dakota": {
+    "latitude": 47.6201461,
+    "longitude": -100.540737,
+    "address": "North Dakota, United States of America"
+  },
+  "Southern Utah": {
+    "latitude": 37.6748541,
+    "longitude": -113.0731048,
+    "address": "Southern Utah University, 351, Shakespeare Lane, Cedar City, Iron County, Utah, 84720, United States of America"
+  },
+  "Northern Colorado": {
+    "latitude": 40.4028503,
+    "longitude": -104.7017242,
+    "address": "University of Northern Colorado, 501, 20th Street, Jackson Field, Greeley, Weld County, Colorado, 80631, United States of America"
+  },
+  "South Dakota State": {
+    "latitude": 47.5662112,
+    "longitude": -122.2971959,
+    "address": "South Dakota Street, Rainier Vista, Mount Baker, Seattle, King County, Washington, 98144, United States of America"
+  },
+  "Columbia": {
+    "latitude": 34.000754,
+    "longitude": -81.0352313,
+    "address": "Columbia, Richland County, South Carolina, United States of America"
+  },
+  "Grambling": {
+    "latitude": 32.5276503,
+    "longitude": -92.7140403,
+    "address": "Grambling, Lincoln Parish, Louisiana, 71245, United States of America"
+  },
+  "Cornell": {
+    "latitude": 40.9900326,
+    "longitude": -88.7292337,
+    "address": "Cornell, Amity Township, Livingston County, Illinois, United States of America"
+  },
+  "Elon": {
+    "latitude": 36.1029132,
+    "longitude": -79.5066895,
+    "address": "Elon, Alamance County, North Carolina, United States of America"
+  },
+  "Idaho State": {
+    "latitude": 42.862567,
+    "longitude": -112.4321627,
+    "address": "Idaho State University, 921, South 8th Avenue, Pocatello, Bannock County, Idaho, 83209, United States of America"
+  },
+  "Jacksonville State": {
+    "latitude": 33.8249359,
+    "longitude": -85.7641095,
+    "address": "Jacksonville State University, 700, Pelham Road North, Jacksonville, Calhoun County, Alabama, 36265, United States of America"
+  },
+  "William & Mary": {
+    "latitude": 37.2690934,
+    "longitude": -76.7220509,
+    "address": "College of William and Mary, Ironbound Road, Williamsburg, Virginia, 23186, United States of America"
+  },
+  "Presbyterian": {
+    "latitude": 36.6291386,
+    "longitude": -93.2096458,
+    "address": "Presbyterian, Hollister, Taney County, Missouri, 65726, United States of America"
+  },
+  "North Carolina Central": {
+    "latitude": 36.9094609,
+    "longitude": -76.7394818,
+    "address": "North Carolina Avenue, Central Hill, Isle of Wight County, Virginia, 23487, United States of America"
+  },
+  "Richmond": {
+    "latitude": 37.5385087,
+    "longitude": -77.43428,
+    "address": "Richmond, Virginia, United States of America"
+  },
+  "The Citadel": {
+    "latitude": 32.7963982,
+    "longitude": -79.9611833,
+    "address": "The Citadel, 171, Moultrie Street, Hampton Park Terrace, Charleston, Charleston County, South Carolina, 29409, United States of America"
+  },
+  "Central Arkansas": {
+    "latitude": 34.100828,
+    "longitude": -93.1213541,
+    "address": "Central, Clark County, Arkansas, United States of America"
+  },
+  "Furman": {
+    "latitude": 32.6815627,
+    "longitude": -81.1881598,
+    "address": "Furman, Hampton County, South Carolina, 29921, United States of America"
+  },
+  "Cal Poly": {
+    "latitude": 34.0556686,
+    "longitude": -117.8239282,
+    "address": "California State Polytechnic University, Pomona, 3801, Temple Avenue, Pomona, Los Angeles County, California, 91768, United States of America"
+  },
+  "Delaware": {
+    "latitude": 38.6920451,
+    "longitude": -75.4013315,
+    "address": "Delaware, United States of America"
+  },
+  "Alcorn State": {
+    "latitude": 36.1599119,
+    "longitude": -79.9728441,
+    "address": "Alcorn Road, Oak Ridge, Guilford County, North Carolina, 27310, United States of America"
+  },
+  "Jacksonville": {
+    "latitude": 30.3321838,
+    "longitude": -81.655651,
+    "address": "Jacksonville, Duval County, Florida, United States of America"
+  },
+  "Grand Valley State University": {
+    "latitude": 42.7788336,
+    "longitude": -86.0760892,
+    "address": "Grand Valley State University, 515, South Waverly Road, Holland, Ottawa County, Michigan, 49423, United States of America"
+  },
+  "Jackson State": {
+    "latitude": 41.8781283,
+    "longitude": -87.6279883,
+    "address": "Jackson & State, West Jackson Boulevard, Financial District, Loop, Chicago, South Chicago Township, Cook County, Illinois, 60604, United States of America"
+  },
+  "Stony Brook": {
+    "latitude": 40.908482,
+    "longitude": -73.1325471,
+    "address": "Stony Brook, Town of Brookhaven, Suffolk County, New York, United States of America"
+  },
+  "Sacramento State": {
+    "latitude": 38.5872993,
+    "longitude": -121.505023,
+    "address": "Old Sacramento State Historic Park, Old Sacramento, Sacramento, Sacramento County, California, United States of America"
+  },
+  "Brown": {
+    "latitude": 31.7525184,
+    "longitude": -98.9904722,
+    "address": "Brown County, Texas, United States of America"
+  },
+  "Illinois State": {
+    "latitude": 41.8908202,
+    "longitude": -87.6277963,
+    "address": "Illinois & State, East Illinois Street, River North, Near North Side, Chicago, North Chicago Township, Cook County, Illinois, 60654, United States of America"
+  },
+  "Albany": {
+    "latitude": 42.6511674,
+    "longitude": -73.754968,
+    "address": "City of Albany, Albany County, New York, United States of America"
+  },
+  "Sam Houston": {
+    "latitude": 30.325209,
+    "longitude": -94.8085373,
+    "address": "Sam Houston, Liberty County, Texas, United States of America"
+  },
+  "Southeastern Louisiana": {
+    "latitude": 30.5182254,
+    "longitude": -90.4688149,
+    "address": "Southeastern Louisiana University, Western Avenue, University Place, Hammond, Tangipahoa Parish, Louisiana, 70401, United States of America"
+  },
+  "Tennessee Tech": {
+    "latitude": 36.1748736,
+    "longitude": -85.5089051,
+    "address": "Tennessee Technological University, 1, William L. Jones Drive, Cookeville, Putnam County, Middle Tennessee, Tennessee, 38505, United States of America"
+  },
+  "Duquesne": {
+    "latitude": 40.3814581,
+    "longitude": -79.8597708,
+    "address": "Duquesne, Allegheny County, Pennsylvania, 15110, United States of America"
+  },
+  "Samford": {
+    "latitude": 36.0742367,
+    "longitude": -89.914254,
+    "address": "Samford, Pemiscot County, Missouri, 63853, United States of America"
+  },
+  "Murray State": {
+    "latitude": 40.7483636,
+    "longitude": -73.9751973,
+    "address": "Dreamlife Wedding Photos and Videos - USA, Tunnel Exit Street, Murray Hill, Manhattan Community Board 6, Manhattan, New York County, City of New York, New York, 10158, United States of America"
+  },
+  "Wofford": {
+    "latitude": 36.7825844,
+    "longitude": -84.1352111,
+    "address": "Wofford, Whitley County, Kentucky, United States of America"
+  },
+  "Houston Christian": {
+    "latitude": 29.6944292,
+    "longitude": -95.5147559,
+    "address": "Houston Christian University, 7502, Fondren Road, Sharpstown, Houston, Harris County, Texas, 77074, United States of America"
+  },
+  "UC Davis": {
+    "latitude": 38.5337904,
+    "longitude": -121.7907544,
+    "address": "University of California, Davis, 1, Newton Court, Davis, Yolo County, California, 95616, United States of America"
+  },
+  "Stephen F. Austin": {
+    "latitude": 29.7588509,
+    "longitude": -95.3689686,
+    "address": "Stephen F. Austin, Smith Street, Downtown, Houston, Harris County, Texas, 77006, United States of America"
+  },
+  "Florida A&M": {
+    "latitude": 32.4159199,
+    "longitude": -107.5766925,
+    "address": "Florida, Luna County, New Mexico, United States of America"
+  },
+  "UT Martin": null,
+  "Northern Arizona": {
+    "latitude": 35.1830867,
+    "longitude": -111.654961,
+    "address": "Northern Arizona University, East McConnell Drive, Flagstaff, Coconino County, Arizona, 86011, United States of America"
+  },
+  "Fordham": {
+    "latitude": 40.8614754,
+    "longitude": -73.8905439,
+    "address": "Fordham, East Fordham Road, Belmont, The Bronx, Bronx County, City of New York, New York, 10458, United States of America"
+  },
+  "Stetson": {
+    "latitude": 44.8917325,
+    "longitude": -69.1428215,
+    "address": "Stetson, Penobscot County, Maine, 04488, United States of America"
+  },
+  "Maine": {
+    "latitude": 45.709097,
+    "longitude": -68.8590201,
+    "address": "Maine, United States of America"
+  },
+  "Austin Peay": {
+    "latitude": 36.5342965,
+    "longitude": -87.3543085,
+    "address": "Austin Peay State University, 601, College Street, James Corlew Dealership, Clarksville, Montgomery County, Middle Tennessee, Tennessee, 37044, United States of America"
+  },
+  "South Dakota": {
+    "latitude": 44.6471761,
+    "longitude": -100.348761,
+    "address": "South Dakota, United States of America"
+  },
+  "Colgate": {
+    "latitude": 43.1928301,
+    "longitude": -88.2067737,
+    "address": "Colgate, Village of Lisbon, Waukesha County, Wisconsin, 53017, United States of America"
+  },
+  "Bucknell": {
+    "latitude": 41.0661136,
+    "longitude": -93.0443692,
+    "address": "Bucknell, Monroe County, Iowa, United States of America"
+  },
+  "Southern": {
+    "latitude": 34.021869,
+    "longitude": -118.2858579,
+    "address": "University of Southern California, South Figueroa Street, University Park, Historic South-Central, Los Angeles, Los Angeles County, California, 90089, United States of America"
+  },
+  "Georgetown": {
+    "latitude": 30.6370152,
+    "longitude": -97.6775634,
+    "address": "Georgetown, Williamson County, Texas, United States of America"
+  },
+  "Rhode Island": {
+    "latitude": 41.7962409,
+    "longitude": -71.5992372,
+    "address": "Rhode Island, United States of America"
+  },
+  "Robert Morris": {
+    "latitude": 39.9477079,
+    "longitude": -75.1485983,
+    "address": "Robert Morris, Walnut Street, Chinatown, Society Hill, Center City, Philadelphia, Philadelphia County, Pennsylvania, 19104, United States of America"
+  },
+  "Kennesaw State": {
+    "latitude": 34.0383451,
+    "longitude": -84.5831053,
+    "address": "Kennesaw State University, 1000, Chastain Road, Kennesaw, Cobb County, Georgia, 30144, United States of America"
+  },
+  "Charleston Southern": {
+    "latitude": 32.9826445,
+    "longitude": -80.0710966,
+    "address": "Charleston Southern University, 9200, University Boulevard, North Charleston, Charleston County, South Carolina, 29406, United States of America"
+  },
+  "Incarnate Word": {
+    "latitude": 26.2846006,
+    "longitude": -98.2422891,
+    "address": "Incarnate Word, McAllen, Hidalgo County, Texas, 78504, United States of America"
+  },
+  "East Tennessee State": {
+    "latitude": 36.2036434,
+    "longitude": -83.2599111,
+    "address": "East Tennessee Regional Public Safety Center, Walters State Community College Drive, Morristown, Hamblen County, East Tennessee, Tennessee, 37813, United States of America"
+  },
+  "Northwestern State": {
+    "latitude": 43.0402754,
+    "longitude": -87.9023101,
+    "address": "The Northwestern Mutual Life Insurance Company, Downtown, Milwaukee, Milwaukee County, Wisconsin, United States of America"
+  },
+  "Nicholls": {
+    "latitude": 31.5174219,
+    "longitude": -82.6348602,
+    "address": "Nicholls, Coffee County, Georgia, United States of America"
+  },
+  "Lafayette": {
+    "latitude": 30.2262187,
+    "longitude": -92.0178202,
+    "address": "Lafayette, Lafayette Parish, Louisiana, United States of America"
+  },
+  "Missouri State": {
+    "latitude": 37.2017202,
+    "longitude": -93.2807714,
+    "address": "Missouri State University, 901, South National Avenue, Delaware, Springfield, Greene County, Missouri, 65897, United States of America"
+  },
+  "Mercer": {
+    "latitude": 41.3334542,
+    "longitude": -80.3014412,
+    "address": "Mercer County, Pennsylvania, United States of America"
+  },
+  "Prairie View A&M": {
+    "latitude": 35.3373736,
+    "longitude": -103.4640474,
+    "address": "Prairie View, Quay County, New Mexico, United States of America"
+  },
+  "North Carolina A&T": {
+    "latitude": 35.9864221,
+    "longitude": -79.7789512,
+    "address": "Metals USA, Pleasant Garden, Guilford County, North Carolina, United States of America"
+  },
+  "Campbell": {
+    "latitude": 38.9339799,
+    "longitude": -84.3715286,
+    "address": "Campbell County, Kentucky, United States of America"
+  },
+  "Howard": {
+    "latitude": 32.3047833,
+    "longitude": -101.4271085,
+    "address": "Howard County, Texas, United States of America"
+  },
+  "Marist": {
+    "latitude": 41.6851862,
+    "longitude": -87.7256509,
+    "address": "Marist High School, 4200, West 115th Street, Mount Greenwood, Chicago, Lake Township, Cook County, Illinois, 60655, United States of America"
+  },
+  "Siena": {
+    "latitude": 29.5050811,
+    "longitude": -95.05458,
+    "address": "Siena, League City, Galveston County, Texas, 77565, United States of America"
+  },
+  "Savannah St": {
+    "latitude": 32.771222,
+    "longitude": -117.2023035,
+    "address": "Savannah Street, Morena, San Diego, San Diego County, California, 92110, United States of America"
+  },
+  "Butler": {
+    "latitude": 39.4233043,
+    "longitude": -84.5936897,
+    "address": "Butler County, Ohio, United States of America"
+  },
+  "Saint Francis (PA)": {
+    "latitude": 39.9307515,
+    "longitude": -75.334475,
+    "address": "Saint Francis, Saxer Avenue, Springfield Township, Delaware County, Pennsylvania, 19064, United States of America"
+  },
+  "Valparaiso": {
+    "latitude": 41.4672552,
+    "longitude": -87.0604487,
+    "address": "Valparaiso, Porter County, Indiana, United States of America"
+  },
+  "Mississippi Valley State": {
+    "latitude": 33.5112606,
+    "longitude": -90.3426333,
+    "address": "Mississippi Valley State University, Medgar Evers Street, Leflore County, Mississippi, 38941, United States of America"
+  },
+  "Morgan State": {
+    "latitude": 39.3446663,
+    "longitude": -76.5836094,
+    "address": "Morgan State University, 1700, East Cold Spring Lane, Lauraville, Hamilton, Baltimore, Maryland, 21251, United States of America"
+  },
+  "Morehead State": {
+    "latitude": 38.1867483,
+    "longitude": -83.4332396,
+    "address": "Morehead State University, Gevedon Place, Morehead, Rowan County, Kentucky, 40351, United States of America"
+  },
+  "San Diego": {
+    "latitude": 32.7174202,
+    "longitude": -117.162772,
+    "address": "San Diego, San Diego County, California, United States of America"
+  },
+  "Central Connecticut": {
+    "latitude": 41.2664438,
+    "longitude": -73.0010921,
+    "address": "Pro Print USA, Boston Post Road, Orange, South Central Connecticut Planning Region, Connecticut, 06477, United States of America"
+  },
+  "Drake": {
+    "latitude": 41.6030742,
+    "longitude": -93.6552753,
+    "address": "Drake University, Mondamin Avenue, Kirkwood Glen, Des Moines, Polk County, Iowa, 50310, United States of America"
+  },
+  "Dayton": {
+    "latitude": 39.77944,
+    "longitude": -84.199196,
+    "address": "Dayton, Montgomery County, Ohio, United States of America"
+  },
+  "Sacred Heart": {
+    "latitude": 44.786903,
+    "longitude": -95.3516784,
+    "address": "Sacred Heart, Renville County, Minnesota, United States of America"
+  },
+  "Utah Tech": {
+    "latitude": 37.1030099,
+    "longitude": -113.5653354,
+    "address": "Utah Tech University, 225, South University Avenue, St. George, Washington County, Utah, 84771, United States of America"
+  },
+  "Arkansas-Pine Bluff": {
+    "latitude": 34.1725433,
+    "longitude": -92.0059764,
+    "address": "Murphy USA, South Olive Street, Pine Bluff, Jefferson County, Arkansas, 71603, United States of America"
+  },
+  "Davidson": {
+    "latitude": 35.7902384,
+    "longitude": -80.2115053,
+    "address": "Davidson County, North Carolina, United States of America"
+  },
+  "Bryant": {
+    "latitude": 40.4661513,
+    "longitude": -90.0917851,
+    "address": "Bryant, Fulton County, Illinois, 61519, United States of America"
+  },
+  "LIU Post": null,
+  "NaN": {
+    "latitude": 29.8249495,
+    "longitude": -95.4786754,
+    "address": "Nan, Houston, Harris County, Texas, 77092, United States of America"
+  }
+}
