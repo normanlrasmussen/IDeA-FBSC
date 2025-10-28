@@ -50,7 +50,7 @@ export const loadRecruitingData = async () => {
   }
 
   dataPromise = new Promise((resolve, reject) => {
-    Papa.parse(`${process.env.PUBLIC_URL || ''}/data/recruiting_data.csv`, {
+    Papa.parse('./data/recruiting_data.csv', {
       header: true,
       download: true,
       skipEmptyLines: true,
