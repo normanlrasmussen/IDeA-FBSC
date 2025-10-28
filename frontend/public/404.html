@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; URL=%PUBLIC_URL%/" />
+    <script>
+      // GH Pages SPA redirect fallback
+      (function() {
+        var l = window.location;
+        var base = (document.querySelector('meta[http-equiv="refresh"]').content.split('URL=')[1]) || '%PUBLIC_URL%/';
+        l.replace(base + (l.hash || '#/'));
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+  </html>
+
+
