@@ -15,7 +15,7 @@ export const loadCollegeCoords = async () => {
   }
 
   try {
-    const response = await fetch(`/IDeA-FBSC/data/geocode_cache.json`);
+    const response = await fetch(`${process.env.PUBLIC_URL}/data/geocode_cache.json`);
     const geocodeCache = await response.json();
     
     // Convert cache format to coordinate format
@@ -50,7 +50,7 @@ export const loadRecruitingData = async () => {
   }
 
   dataPromise = new Promise((resolve, reject) => {
-    Papa.parse(`/IDeA-FBSC/data/recruiting_data.csv`, {
+    Papa.parse(`${process.env.PUBLIC_URL}/data/recruiting_data.csv`, {
       header: true,
       download: true,
       skipEmptyLines: true,
