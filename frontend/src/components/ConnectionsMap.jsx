@@ -87,9 +87,9 @@ const ConnectionsMap = () => {
       (showAllColleges || row.committedTo === selectedCollege) &&
       parseInt(row.class_year) >= yearRange[0] &&
       parseInt(row.class_year) <= yearRange[1] &&
-      (row.latitude && row.longitude) || // Continental US needs coordinates
+      ((row.latitude && row.longitude) || // Continental US needs coordinates
       (row.stateProvince === 'AK' || row.stateProvince === 'HI') || // Alaska/Hawaii don't need coordinates
-      (row.country && row.country !== 'USA') // International don't need coordinates
+      (row.country && row.country !== 'USA')) // International don't need coordinates
     );
     
     // Process pathways - separate continental and non-continental
