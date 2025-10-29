@@ -1,3 +1,11 @@
 This is a list of features to implement
 
 1) Interantional Recruits on the circles graph
+2) Include more years (Easy)
+3) Fix rankings to include itereional (connections)
+4) Get the nfl table equivilant
+
+Possible Ideas
+1) Look at who gets top Recruit
+2) Compare the same college over different year periods
+3) Get the recruit stats of a given year
