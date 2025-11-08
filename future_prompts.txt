@@ -9,3 +9,9 @@ Possible Ideas
 1) Look at who gets top Recruit
 2) Compare the same college over different year periods
 3) Get the recruit stats of a given year
+
+Other Possible
+1) Look at highschool sendouts per capita
+2) Look at who highschools supply
+3) Cluster the US into k clusters and look at the change in the amount of recruits overtime
+4) Look at the diversity of college recuiting, how far all the recruits are
