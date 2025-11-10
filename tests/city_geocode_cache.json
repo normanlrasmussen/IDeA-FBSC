@@ -1,0 +1,602 @@
+{
+  "41.505161,-81.693445": {
+    "city": "Cleveland",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "Cleveland City Hall, 601, Lakeside Avenue East, Downtown Cleveland, Cleveland, Cuyahoga County, Ohio, 44114, United States of America"
+  },
+  "33.712331,-84.105194": {
+    "city": "Lithonia",
+    "state": "Georgia",
+    "country": "United States of America",
+    "address": "2798, Rock Chapel Road, Lithonia, DeKalb County, Georgia, 30058, United States of America"
+  },
+  "34.807330,-82.820698": {
+    "city": "Six Mile",
+    "state": "South Carolina",
+    "country": "United States of America",
+    "address": "Six Mile Baptist Church, 149, North Main Street, Six Mile, Pickens County, South Carolina, 29682, United States of America"
+  },
+  "39.101454,-84.512460": {
+    "city": "Cincinnati",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "Fountain Square Parking, Vine Street, Main Street Historic District, Central Business District, Cincinnati, Hamilton County, Ohio, 45202, United States of America"
+  },
+  "34.285558,-118.882041": {
+    "city": "Moorpark",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Old Town Business District, East High Street, Moorpark, Ventura County, California, 93021, United States of America"
+  },
+  "40.603041,-74.687447": {
+    "city": "Branchburg Township",
+    "state": "New Jersey",
+    "country": "United States of America",
+    "address": "Orr Drive, Branchburg Township, Somerset County, New Jersey, 08876, United States of America"
+  },
+  "30.521712,-97.827833": {
+    "city": "Cedar Park",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "H-E-B, 170, East Whitestone Boulevard, Cedar Park, Williamson County, Texas, 78613, United States of America"
+  },
+  "27.498928,-82.574819": {
+    "city": "Bradenton",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Manatee County Central Library, 1301, 14th Street West, Bradenton, Manatee County, Florida, 34205, United States of America"
+  },
+  "34.197631,-119.180382": {
+    "city": "Oxnard",
+    "state": "California",
+    "country": "United States of America",
+    "address": "299, West 5th Street, Oxnard, Ventura County, California, 93030, United States of America"
+  },
+  "35.149022,-90.051629": {
+    "city": "Memphis",
+    "state": "Tennessee",
+    "country": "United States of America",
+    "address": "Civic Center Plaza, North Main Street, Lauderdale Courts, Memphis, Shelby County, West Tennessee, Tennessee, 38107, United States of America"
+  },
+  "37.336191,-121.890583": {
+    "city": "San Jose",
+    "state": "California",
+    "country": "United States of America",
+    "address": "13, East Santa Clara Street, Saint James Square Historic District, Japantown, San Jose, Santa Clara County, California, 95113, United States of America"
+  },
+  "34.053691,-118.242767": {
+    "city": "Los Angeles",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Los Angeles City Hall, 200, North Spring Street, Civic Center, Downtown, Los Angeles, Los Angeles County, California, 90012, United States of America"
+  },
+  "40.602843,-79.564767": {
+    "city": "Vandergrift",
+    "state": "Pennsylvania",
+    "country": "United States of America",
+    "address": "PA 56;PA 66 ALT, Vandergrift, Westmoreland County, Pennsylvania, 15629, United States of America"
+  },
+  "33.532005,131.349674": {
+    "city": "\u5b87\u4f50\u5e02",
+    "state": "Unknown",
+    "country": "\u65e5\u672c",
+    "address": "\u5b87\u4f50\u5e02\u5f79\u6240, \u5b87\u4f50\u672c\u8036\u99ac\u6e13\u7dda, \u5927\u5b57\u5ddd\u90e8, \u5b87\u4f50\u5e02, \u5927\u5206\u770c, 879-0453, \u65e5\u672c"
+  },
+  "40.630657,-74.522669": {
+    "city": "Warren Township",
+    "state": "New Jersey",
+    "country": "United States of America",
+    "address": "19, Thistle Lane, Mount Bethel, Warren Township, Somerset County, New Jersey, 07059, United States of America"
+  },
+  "42.657170,-71.140878": {
+    "city": "Andover",
+    "state": "Massachusetts",
+    "country": "United States of America",
+    "address": "Memorial Hall Library, 2, North Main Street, Andover, Essex County, Massachusetts, 01810, United States of America"
+  },
+  "41.864696,-88.110171": {
+    "city": "Wheaton",
+    "state": "Illinois",
+    "country": "United States of America",
+    "address": "West Front Street, Wheaton, DuPage County, Illinois, 60187, United States of America"
+  },
+  "33.450400,-88.818387": {
+    "city": "Starkville",
+    "state": "Mississippi",
+    "country": "United States of America",
+    "address": "Victory Lane, Pecan Acres, Starkville, Oktibbeha County, Mississippi, 39759, United States of America"
+  },
+  "33.749099,-84.390185": {
+    "city": "Atlanta",
+    "state": "Georgia",
+    "country": "United States of America",
+    "address": "Atlanta City Hall, 55, Trinity Avenue Southwest, South Downtown, Atlanta, Fulton County, Georgia, 30303, United States of America"
+  },
+  "41.875562,-87.624421": {
+    "city": "Chicago",
+    "state": "Illinois",
+    "country": "United States of America",
+    "address": "South Michigan Avenue, Loop, Chicago, South Chicago Township, Cook County, Illinois, 60604, United States of America"
+  },
+  "32.640054,-117.084196": {
+    "city": "Chula Vista",
+    "state": "California",
+    "country": "United States of America",
+    "address": "F Street, Chula Vista, San Diego County, California, 91950, United States of America"
+  },
+  "29.998831,-95.262155": {
+    "city": "Humble",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "413, Herman Street, Humble, Harris County, Texas, 77338, United States of America"
+  },
+  "32.912624,-96.638883": {
+    "city": "Garland",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "Fish N' Tails Oyster Bar, 620, Main Street, Garland, Dallas County, Texas, 75040, United States of America"
+  },
+  "39.758948,-84.191607": {
+    "city": "Dayton",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "20, South Main Street, East Second Street Historic District, Dayton, Montgomery County, Ohio, 45402, United States of America"
+  },
+  "41.455323,-81.917917": {
+    "city": "Westlake",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "2332, Beechwood Drive, Forest Park, Westlake, Cuyahoga County, Ohio, 44145, United States of America"
+  },
+  "41.448940,-82.707960": {
+    "city": "Sandusky",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "782, West Park Street, Kilbourne Plat, Sandusky, Erie County, Ohio, 44870, United States of America"
+  },
+  "41.473942,-81.537067": {
+    "city": "Shaker Heights",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "20231, South Woodland Road, Malvern, Shaker Heights, Cuyahoga County, Ohio, 44122, United States of America"
+  },
+  "26.926083,-80.121089": {
+    "city": "Jupiter",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Birkdale Lane, Jupiter, Palm Beach County, Florida, 33458, United States of America"
+  },
+  "40.843666,-81.764021": {
+    "city": "Orrville",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "Orr Street, Orrville, Wayne County, Ohio, 44667, United States of America"
+  },
+  "39.435337,-84.202992": {
+    "city": "Lebanon",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "350, East Silver Street, East End Historic District, Lebanon, Warren County, Ohio, 45036, United States of America"
+  },
+  "27.947760,-82.458444": {
+    "city": "Tampa",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Riverside, Tampa, Hillsborough County, Florida, 33601, United States of America"
+  },
+  "28.151124,-82.461483": {
+    "city": "Lutz",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "19015, US 41, Lutz, Hillsborough County, Florida, 33549, United States of America"
+  },
+  "33.952847,-84.549615": {
+    "city": "Marietta",
+    "state": "Georgia",
+    "country": "United States of America",
+    "address": "North Park Square Northeast, Marietta, Cobb County, Georgia, 30090, United States of America"
+  },
+  "32.766610,-96.599472": {
+    "city": "Mesquite",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "Wells Fargo, 120, West Main Street, Mesquite, Dallas County, Texas, 75149, United States of America"
+  },
+  "35.721269,-77.915539": {
+    "city": "Wilson",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "Goldsboro Street Southwest, Wilson, Wilson County, North Carolina, United States of America"
+  },
+  "26.684510,-80.667558": {
+    "city": "Belle Glade",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "245, South Main Street, Belle Glade, Palm Beach County, Florida, 33430, United States of America"
+  },
+  "40.650104,-73.949582": {
+    "city": "City of New York",
+    "state": "New York",
+    "country": "United States of America",
+    "address": "1480, Nostrand Avenue, Brooklyn Community District 17, Brooklyn, Kings County, City of New York, New York, 11226, United States of America"
+  },
+  "26.142198,-81.794294": {
+    "city": "Naples",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "495, US 41, Redevelopment Area, Naples, Collier County, Florida, 34102, United States of America"
+  },
+  "30.332184,-81.655651": {
+    "city": "Jacksonville",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "23, Union Street, Jacksonville, Duval County, Florida, 32202, United States of America"
+  },
+  "40.441694,-79.990086": {
+    "city": "Pittsburgh",
+    "state": "Pennsylvania",
+    "country": "United States of America",
+    "address": "Logan Street, Chinatown, Downtown, Pittsburgh, Allegheny County, Pennsylvania, 15262, United States of America"
+  },
+  "32.776272,-96.796856": {
+    "city": "Dallas",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "Dallas City Hall, 1500, Marilla Street, Downtown PID, Dallas, Dallas County, Texas, 75242, United States of America"
+  },
+  "26.122308,-80.143379": {
+    "city": "Fort Lauderdale",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Zip in Media Productions, LLC - Video Production Fort Lauderdale, 1, East Broward Boulevard, Fort Lauderdale, Broward County, Florida, 33301, United States of America"
+  },
+  "40.752010,-80.319230": {
+    "city": "Beaver Falls",
+    "state": "Pennsylvania",
+    "country": "United States of America",
+    "address": "700, 11th Street, Beaver Falls, Beaver County, Pennsylvania, 15010, United States of America"
+  },
+  "35.994105,-79.935659": {
+    "city": "Jamestown",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "101, Oakdale Road, Jamestown, Guilford County, North Carolina, 27282, United States of America"
+  },
+  "32.717421,-117.162771": {
+    "city": "San Diego",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Core-Columbia, Banker's Hill, San Diego, San Diego County, California, 92101, United States of America"
+  },
+  "34.179203,-118.761972": {
+    "city": "Oak Park",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Oak Park High School, Calle Mirador, Oak Park, Ventura County, California, 91377, United States of America"
+  },
+  "38.656118,-121.074326": {
+    "city": "Unknown",
+    "state": "California",
+    "country": "United States of America",
+    "address": "El Dorado Hills, El Dorado County, California, 95762, United States of America"
+  },
+  "34.203232,-118.645476": {
+    "city": "Los Angeles",
+    "state": "California",
+    "country": "United States of America",
+    "address": "7316, Pomelo Drive, West Hills, Los Angeles, Los Angeles County, California, 91307, United States of America"
+  },
+  "35.108493,-77.044114": {
+    "city": "New Bern",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "Tabernacle Baptist Church, 616, Broad Street, Craven Terrace, New Bern, Craven County, North Carolina, 28563, United States of America"
+  },
+  "36.162230,-86.774353": {
+    "city": "Nashville",
+    "state": "Tennessee",
+    "country": "United States of America",
+    "address": "1st Avenue South, Downtown Nashville, East Nashville, Nashville, Davidson County, Middle Tennessee, Tennessee, 37201, United States of America"
+  },
+  "38.833958,-104.825349": {
+    "city": "Colorado Springs",
+    "state": "Colorado",
+    "country": "United States of America",
+    "address": "2, East Pikes Peak Avenue, Downtown, Colorado Springs, El Paso County, Colorado, 80903, United States of America"
+  },
+  "34.579605,-79.546441": {
+    "city": "Clio",
+    "state": "South Carolina",
+    "country": "United States of America",
+    "address": "Clio Historic District, Society Street, Clio, Marlboro County, South Carolina, 29525, United States of America"
+  },
+  "36.674412,-121.655037": {
+    "city": "Salinas",
+    "state": "California",
+    "country": "United States of America",
+    "address": "252, Main Street, Salinas, Monterey County, California, 93901, United States of America"
+  },
+  "40.233844,-111.658534": {
+    "city": "Provo",
+    "state": "Utah",
+    "country": "United States of America",
+    "address": "Center Street, Downtown, Provo, Utah County, Utah, 84603, United States of America"
+  },
+  "32.929966,-97.227125": {
+    "city": "Keller",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "Keller Town Hall, 1100, Bear Creek Parkway, Keller, Tarrant County, Texas, 76248, United States of America"
+  },
+  "37.413754,-79.142246": {
+    "city": "Lynchburg",
+    "state": "Virginia",
+    "country": "United States of America",
+    "address": "Lynchburg City Bill Pay Kiosk, 10th Street, Downtown, Lynchburg, Virginia, 24504, United States of America"
+  },
+  "32.509311,-92.119301": {
+    "city": "Monroe",
+    "state": "Louisiana",
+    "country": "United States of America",
+    "address": "604, Louisville Avenue, Monroe, Ouachita Parish, Louisiana, 71201, United States of America"
+  },
+  "35.227200,-80.843083": {
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "Omni Charlotte Hotel, 132, East Trade Street, Uptown, Charlotte, Mecklenburg County, North Carolina, 28202, United States of America"
+  },
+  "32.219184,-98.213063": {
+    "city": "Stephenville",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "1015, West Sloan Street, Stephenville, Erath County, Texas, 76401, United States of America"
+  },
+  "41.913951,-88.312530": {
+    "city": "St. Charles",
+    "state": "Illinois",
+    "country": "United States of America",
+    "address": "5, North Riverside Avenue, St. Charles, St. Charles Township, Kane County, Illinois, 60174, United States of America"
+  },
+  "34.148350,-118.001452": {
+    "city": "Monrovia",
+    "state": "California",
+    "country": "United States of America",
+    "address": "South Myrtle Avenue, Monrovia, Los Angeles County, California, 91016, United States of America"
+  },
+  "26.418690,-81.417299": {
+    "city": "Immokalee",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Immokalee Road, Immokalee, Collier County, Florida, 34142, United States of America"
+  },
+  "26.525618,-80.066603": {
+    "city": "Boynton Beach",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "251, Southwest 2nd Avenue, Boynton Beach, Palm Beach County, Florida, 33435, United States of America"
+  },
+  "35.925193,-86.868937": {
+    "city": "Franklin",
+    "state": "Tennessee",
+    "country": "United States of America",
+    "address": "Cannon, Public Square, Rolling Rivers, Franklin, Williamson County, Middle Tennessee, Tennessee, 36711, United States of America"
+  },
+  "35.711374,-82.250311": {
+    "city": "Unknown",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "Blue Ridge Parkway Tent, South Toe River Road, Yancey County, North Carolina, United States of America"
+  },
+  "40.759620,-111.886798": {
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "country": "United States of America",
+    "address": "400 South, Central City, Salt Lake City, Salt Lake County, Utah, 84139, United States of America"
+  },
+  "33.311498,-86.782425": {
+    "city": "Unknown",
+    "state": "Alabama",
+    "country": "United States of America",
+    "address": "Fungo Hollow, Shelby County, Alabama, 35124, United States of America"
+  },
+  "28.542111,-81.379030": {
+    "city": "Orlando",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "2, East Central Boulevard, Central Business District, Orlando, Orange County, Florida, 32801, United States of America"
+  },
+  "37.229657,-80.413677": {
+    "city": "Blacksburg",
+    "state": "Virginia",
+    "country": "United States of America",
+    "address": "Hunter's Lodge No. 156, 105, Roanoke Street, Keister Addition, Blacksburg, Montgomery County, Virginia, 24060, United States of America"
+  },
+  "21.304547,-157.855676": {
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "country": "United States of America",
+    "address": "Sky Gate, Hotel Street Mall, Downtown, Hawaii Capital Historic District, Honolulu, Honolulu County, Hawaii, 96813, United States of America"
+  },
+  "26.775340,-80.058097": {
+    "city": "Riviera Beach",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "161, West 15th Street, Riviera Beach, Palm Beach County, Florida, 33404, United States of America"
+  },
+  "33.953355,-117.396162": {
+    "city": "Riverside",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Magnolia Avenue, Magnolia Center, Riverside, Riverside County, California, 92506, United States of America"
+  },
+  "29.758938,-95.367697": {
+    "city": "Houston",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "One Shell Plaza, 910, Louisiana Street, Downtown, Houston, Harris County, Texas, 77002, United States of America"
+  },
+  "39.328924,-82.101248": {
+    "city": "Athens",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "South Court Street, Uptown, Athens, Athens Township, Athens County, Ohio, 45701, United States of America"
+  },
+  "38.018175,-121.890123": {
+    "city": "Pittsburg",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Pittsburg Library, 80, Power Avenue, Pittsburg, Contra Costa County, California, 94565, United States of America"
+  },
+  "33.875660,-84.762159": {
+    "city": "Hiram",
+    "state": "Georgia",
+    "country": "United States of America",
+    "address": "93, Beatty Street, Sunny Acres, Hiram, Paulding County, Georgia, 30141, United States of America"
+  },
+  "25.774266,-80.193659": {
+    "city": "Miami",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "8, North Miami Avenue, Miami, Miami-Dade County, Florida, 33128, United States of America"
+  },
+  "30.757260,-98.226936": {
+    "city": "Burnet",
+    "state": "Texas",
+    "country": "United States of America",
+    "address": "Burnet County Courthouse, 220, South Pierce Street, Burnet, Burnet County, Texas, 78611, United States of America"
+  },
+  "33.158093,-117.350597": {
+    "city": "Carlsbad",
+    "state": "California",
+    "country": "United States of America",
+    "address": "Better Buzz, 3016, Carlsbad Boulevard, Downtown Carlsbad, Carlsbad, San Diego County, California, 92008, United States of America"
+  },
+  "28.811730,-81.268034": {
+    "city": "Sanford",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "Historic First National Bank No.1, 101, West 1st Street, Sanford, Seminole County, Florida, 32771, United States of America"
+  },
+  "28.693322,-81.288510": {
+    "city": "Winter Springs",
+    "state": "Florida",
+    "country": "United States of America",
+    "address": "682, Sailfish Road, Winter Springs, Seminole County, Florida, 32708, United States of America"
+  },
+  "35.959537,-78.254318": {
+    "city": "Bunn",
+    "state": "North Carolina",
+    "country": "United States of America",
+    "address": "130, South Franklin Street, Bunn, Franklin County, North Carolina, 27549, United States of America"
+  },
+  "35.472989,-97.517054": {
+    "city": "Oklahoma City",
+    "state": "Oklahoma",
+    "country": "United States of America",
+    "address": "Alfred P. Murrah Federal Building Plaza, Northwest 4th Street, Central Business District, Oklahoma City, Oklahoma County, Oklahoma, 73106, United States of America"
+  },
+  "36.155681,-95.992911": {
+    "city": "Tulsa",
+    "state": "Oklahoma",
+    "country": "United States of America",
+    "address": "South Main Street, Downtown Tulsa, Tulsa, Tulsa County, Oklahoma, 74119, United States of America"
+  },
+  "40.826489,-74.106809": {
+    "city": "Rutherford",
+    "state": "New Jersey",
+    "country": "United States of America",
+    "address": "Rutherford Free Public Library, Chestnut Street, Rutherford, Bergen County, New Jersey, 07070, United States of America"
+  },
+  "40.242332,-74.581266": {
+    "city": "Robbinsville Township",
+    "state": "New Jersey",
+    "country": "United States of America",
+    "address": "3, North Main Street, Windsor, Robbinsville Township, Mercer County, New Jersey, 08561, United States of America"
+  },
+  "42.096968,-75.914341": {
+    "city": "City of Binghamton",
+    "state": "New York",
+    "country": "United States of America",
+    "address": "Hawley Street, Downtown Binghamton, City of Binghamton, Broome County, New York, 13903, United States of America"
+  },
+  "41.510033,-82.018590": {
+    "city": "Avon Lake",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "Avon Lake City Hall, 150, Avon Belden Road, Avon Point, Avon Lake, Lorain County, Ohio, 44012, United States of America"
+  },
+  "38.626804,-90.199410": {
+    "city": "Saint Louis",
+    "state": "Missouri",
+    "country": "United States of America",
+    "address": "St. Louis City Hall, 1200, Market Street, Downtown West, Saint Louis, Missouri, 63103, United States of America"
+  },
+  "41.518941,-83.803828": {
+    "city": "Whitehouse",
+    "state": "Ohio",
+    "country": "United States of America",
+    "address": "Providence Street, Whitehouse, Lucas County, Ohio, 43571, United States of America"
+  },
+  "39.870055,-75.126518": {
+    "city": "Westville",
+    "state": "New Jersey",
+    "country": "United States of America",
+    "address": "29, Center Street, Westville, Gloucester County, New Jersey, 08093, United States of America"
+  },
+  "41.538137,-75.536019": {
+    "city": "Mayfield",
+    "state": "Pennsylvania",
+    "country": "United States of America",
+    "address": "753, Maple Street, Mayfield, Lackawanna County, Pennsylvania, 18433, United States of America"
+  },
+  "38.254238,-85.759407": {
+    "city": "Louisville",
+    "state": "Kentucky",
+    "country": "United States of America",
+    "address": "Thomas Jefferson, West Jefferson Street, Louisville, Jefferson County, Kentucky, 40212, United States of America"
+  },
+  "44.977300,-93.265469": {
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "country": "United States of America",
+    "address": "Minneapolis City Hall, 350, South 5th Street, Minneapolis, Hennepin County, Minnesota, 55415, United States of America"
+  },
+  "40.550853,-105.066808": {
+    "city": "Fort Collins",
+    "state": "Colorado",
+    "country": "United States of America",
+    "address": "616, Heather Court, Governor's Park Apartments, Fort Collins, Larimer County, Colorado, 80525, United States of America"
+  },
+  "33.226193,-117.029130": {
+    "city": "Valley Center",
+    "state": "California",
+    "country": "United States of America",
+    "address": "28270, Indian Creek Road, Valley Center, San Diego County, California, 92082, United States of America"
+  },
+  "40.075823,-102.223249": {
+    "city": "Wray",
+    "state": "Colorado",
+    "country": "United States of America",
+    "address": "198, West 6th Street, Wray, Yuma County, Colorado, 80758, United States of America"
+  },
+  "40.641102,-102.626858": {
+    "city": "Haxtun",
+    "state": "Colorado",
+    "country": "United States of America",
+    "address": "198, East Fletcher Street, Haxtun, Phillips County, Colorado, 80731, United States of America"
+  },
+  "35.646899,-117.812567": {
+    "city": "Inyokern",
+    "state": "California",
+    "country": "United States of America",
+    "address": "West Inyokern Road, Inyokern, Kern County, California, 93556, United States of America"
+  },
+  "35.084103,-106.650985": {
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "country": "United States of America",
+    "address": "Third Central Plaza, 300, Central Avenue Northwest, Martineztown-Santa Barbara, Barelas, Albuquerque, Bernalillo County, New Mexico, 87102, United States of America"
+  }
+}
