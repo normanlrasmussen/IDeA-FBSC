@@ -152,7 +152,12 @@ function Dashboard() {
     [bounds.min, bounds.max]
   );
   const scoped = useMemo(() => filterRecords(records, years[0], years[1], college), [records, years, college]);
-  const stats = useMemo(() => summarize(scoped), [scoped]);
+  const statisticsRows = useMemo(() => {
+    if (view !== "compare") return scoped;
+    const chosen = new Set([compareA, compareB]);
+    return records.filter(row => row.year >= years[0] && row.year <= years[1] && chosen.has(row.college));
+  }, [view, scoped, compareA, compareB, records, years]);
+  const stats = useMemo(() => summarize(statisticsRows), [statisticsRows]);
   const ranking = useMemo(() => {
     if (view === "connections") return topSchools(scoped);
     if (densityType === "colleges") return aggregateColleges(scoped, geocodes).slice(0, 10);
@@ -256,7 +261,7 @@ function Dashboard() {
           ) : (
             <>
               <div className="metrics-grid">
-                <Metric title="Total recruits" value={fmt(stats.recruits)} note="Matching class-year selection" />
+                <Metric title="Total recruits" value={fmt(stats.recruits)} note={view === "compare" ? "Across the compared programs" : "Matching class-year selection"} />
                 <Metric title="Source schools" value={fmt(stats.schools)} note="Distinct listed high schools" />
                 <Metric title="Colleges" value={fmt(stats.colleges)} note="Programs in selection" />
                 <Metric title="US-mapped origins" value={fmt(stats.mapped)} note={stats.recruits ? Math.round(stats.mapped / stats.recruits * 100) + "% of selected records" : "No records"} />
