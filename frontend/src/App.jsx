@@ -24,7 +24,7 @@ function RankingPanel({ items, title, subtitle }) {
   return (
     <section className="panel ranking-panel">
       <div className="panel-head">
-        <div><span className="eyebrow">LEADERBOARD</span><h2>{title}</h2></div>
+        <div><span className="eyebrow">TOP RECORDS</span><h2>{title}</h2></div>
         <p>{subtitle}</p>
       </div>
       {items.length ? (
@@ -171,29 +171,22 @@ function Dashboard() {
 
   return (
     <div className="dashboard">
-      <header className="site-header">
-        <div className="brand">
-          <span className="brand-icon" aria-hidden="true">R<span>↗</span></span>
-          <div><strong>RECRUIT ATLAS</strong><span>College football intelligence</span></div>
+      <section className="project-hero" aria-labelledby="project-title">
+        <div className="project-hero-copy">
+          <span className="eyebrow">COLLEGE FOOTBALL RECRUITING PROJECT</span>
+          <h1 id="project-title">College Football Recruiting Data</h1>
+          <p>
+            A visualization of historical college football recruiting records.
+            Explore where recruits came from, which schools they attended, and
+            how recruiting patterns vary across years and college programs.
+          </p>
         </div>
-        <div className="header-right">
-          <span className="data-pill"><span className="status-dot" />Historical recruiting data</span>
-          <a className="source-link" href="https://github.com/normanlrasmussen/IDeA-FBSC" target="_blank" rel="noreferrer">View source <span aria-hidden="true">↗</span></a>
-        </div>
-      </header>
-
-      <div className="hero">
-        <div className="hero-copy">
-          <span className="hero-kicker">AN INTERACTIVE RECRUITING EXPLORER <span className="hero-rule" /></span>
-          <h1>Where talent <em>meets opportunity.</em></h1>
-          <p>Explore the geographic story of college football recruiting—from hometown pipelines to programs across the country.</p>
-        </div>
-        <div className="hero-badge">
+        <div className="project-hero-meta">
           <span>DATA COVERAGE</span>
-          <strong>{loading ? "—" : bounds.min + "—" + bounds.max}</strong>
-          <small>Recruiting class years</small>
+          <strong>{loading ? "—" : `${bounds.min}–${bounds.max}`}</strong>
+          <small>Recruiting class years in the dataset</small>
         </div>
-      </div>
+      </section>
 
       <div className="workspace">
         <aside className="sidebar">
@@ -239,17 +232,17 @@ function Dashboard() {
           )}
           <div className="sidebar-notes">
             <strong>About the data</strong>
-            <p>Recruiting records are sourced from <a href="https://collegefootballdata.com" target="_blank" rel="noreferrer">CollegeFootballData</a>. Map markers require usable coordinates; summary counts can include unmapped records.</p>
-            <span>Interactive analysis · Browser-based</span>
+            <p>Recruiting records are sourced from <a href="https://collegefootballdata.com" target="_blank" rel="noreferrer">CollegeFootballData</a>. This project visualizes the available dataset. Map markers require usable coordinates; summary counts can include unmapped records.</p>
+            <span>Historical data visualization project</span>
           </div>
         </aside>
 
         <main className="main-content">
           <div className="page-intro">
             <div>
-              <span className="eyebrow">DASHBOARD / {view === "connections" ? "CONNECTIONS" : view === "density" ? "DENSITY" : "COMPARISON"}</span>
+              <span className="eyebrow">DATA / {view === "connections" ? "CONNECTIONS" : view === "density" ? "DENSITY" : "COMPARISON"}</span>
               <h2>{view === "connections" ? "Recruiting connections" : view === "density" ? "Geographic recruiting density" : "College comparison"}</h2>
-              <p>{view === "connections" ? "Trace recruiting pathways from high schools to college programs." : view === "density" ? "Identify the cities and campuses shaping the national recruiting landscape." : "Understand how programs differ in where and how widely they recruit."}</p>
+              <p>{view === "connections" ? "View the pathways recorded from high schools to college programs." : view === "density" ? "See where recruits in the dataset are concentrated by city or college." : "Compare the recruiting patterns recorded for two colleges."}</p>
             </div>
             <span className="selection-chip">{view === "compare" ? "Two-program view" : college === "all" ? "All colleges" : college}</span>
           </div>
@@ -291,7 +284,7 @@ function Dashboard() {
           )}
         </main>
       </div>
-      <footer className="site-footer"><span>RECRUIT ATLAS</span><span>Data: CollegeFootballData · Built with React and Plotly</span><a href="https://github.com/normanlrasmussen/IDeA-FBSC" target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+      <footer className="site-footer"><span>College Football Recruiting Project</span><span>Data: CollegeFootballData · Historical recruiting visualizations</span><a href="https://github.com/normanlrasmussen/IDeA-FBSC" target="_blank" rel="noreferrer">Source code ↗</a></footer>
     </div>
   );
 }
