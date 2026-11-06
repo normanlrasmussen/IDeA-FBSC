@@ -143,8 +143,8 @@ function Dashboard() {
     setCompareB(colleges.includes("Georgia") ? "Georgia" : colleges.find(c => c !== (colleges.includes("Alabama") ? "Alabama" : colleges[0])) || colleges[0]);
   }, [dataset]);
 
-  const records = dataset ? dataset.records : [];
-  const geocodes = dataset ? dataset.geocodes : {};
+  const records = useMemo(() => dataset ? dataset.records : [], [dataset]);
+  const geocodes = useMemo(() => dataset ? dataset.geocodes : {}, [dataset]);
   const colleges = dataset ? dataset.colleges : [];
   const bounds = dataset ? dataset.bounds : { min: 2020, max: 2025 };
   const yearOptions = useMemo(
