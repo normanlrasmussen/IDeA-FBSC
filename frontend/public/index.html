@@ -1,23 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Football Recruiting Dashboard - Visualize college football recruiting connections and statistics"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-     crossorigin=""/>
-    <title>Football Recruiting Dashboard</title>
+    <meta name="theme-color" content="#102737" />
+    <meta name="description" content="Explore college football recruiting geography, pathways, and program comparisons with Recruit Atlas." />
+    <title>Recruit Atlas | College Football Recruiting Dashboard</title>
+    <script>
+      // Restore client-side routes rewritten by the GitHub Pages 404 redirect.
+      (function (location) {
+        if (location.search.slice(0, 2) !== "?/") return;
+        var decoded = location.search.slice(1).replace(/~and~/g, "&");
+        var separator = decoded.indexOf("&");
+        var route = separator >= 0 ? decoded.slice(0, separator) : decoded;
+        var query = separator >= 0 ? "?" + decoded.slice(separator + 1) : "";
+        window.history.replaceState(null, "", location.pathname.replace(/\/$/, "") + route + query + location.hash);
+      })(window.location);
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>Enable JavaScript to explore Recruit Atlas.</noscript>
     <div id="root"></div>
   </body>
 </html>
